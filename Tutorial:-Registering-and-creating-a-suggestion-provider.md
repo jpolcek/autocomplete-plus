@@ -146,3 +146,67 @@ Custom confirmation actions
 Per default, when the user confirms the autocompletion, `autocomplete-plus` will just replace the Suggestion's `prefix` attribute with the given `word`. Let's replace it with some custom content by overriding the `confirm(Suggestion)` method.
 
 As the return value, `confirm` expects a Boolean. If it returns `true`, it will use the default behavior. If it returns a falsy value, it won't.
+
+Our `possibleWords` array will now look like this:
+
+```coffeescript
+  possibleWords: [
+    { word: "async", label: "@async", body: "@async" },
+    { word: "attribute", label: "@attribute", body: "@attribute [name]" },
+    { word: "beta", label: "@beta", body: "@beta" },
+    { word: "borrows", label: "@borrows", body: "@borrows [otherMemberName] as [thisMemberName]" },
+    { word: "bubbles", label: "@bubbles", body: "@bubbles [name]" }
+  ]
+```
+
+Let's override `confirm(Suggestion)`:
+
+```coffeescript
+  confirm: (suggestion) ->
+    selection = @editor.getSelection()
+    startPosition = selection.getBufferRange().start
+    buffer = @editor.getBuffer()
+
+    # Replace the prefix with the body
+    cursorPosition = @editor.getCursorBufferPosition()
+    buffer.delete Range.fromPointWithDelta(cursorPosition, 0, -suggestion.prefix.length)
+    @editor.insertText suggestion.data.body
+
+    # Move the cursor behind the body
+    suffixLength = suggestion.data.body.length - suggestion.prefix.length
+    @editor.setSelectedBufferRange [startPosition, [startPosition.row, startPosition.column + suffixLength]]
+
+    return false # Don't fall back to the default behavior
+```
+
+And let's update our `findSuggestionsForPrefix` method as well:
+
+```coffeescript
+  findSuggestionsForPrefix: (prefix) ->
+    # Get rid of the leading @
+    prefix = prefix.replace /^@/, ''
+
+    wordsByWord = {}
+    words = for word in @possibleWords
+      wordsByWord[word.word] = word
+      word.word
+
+    # Filter the words using fuzzaldrin
+    results = fuzzaldrin.filter words, prefix
+
+    # Builds suggestions for the words
+    suggestions = for result in results when word isnt prefix
+      word = wordsByWord[result]
+      new Suggestion this,
+        word: word.word
+        prefix: "@#{prefix}"
+        label: word.label
+        data:
+          body: word.body
+
+    return suggestions
+```
+
+Et voilà! We're done:
+
+![ExampleProvider](http://s7.directupload.net/images/140411/qoxz2k7h.gif)
