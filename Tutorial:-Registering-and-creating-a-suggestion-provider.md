@@ -1,4 +1,4 @@
-Since version 0.12.0 other packages can register suggestion providers for autocomplete-plus. Suggestion providers provider words that will be displayed in autocomplete-plus's suggestion list.
+Since version 0.12.0 other packages can register suggestion providers for autocomplete-plus. Suggestion providers provide words that will be displayed in autocomplete-plus's suggestion list.
 
 Registering a suggestion provider
 ---------------------------------
