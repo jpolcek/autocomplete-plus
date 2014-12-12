@@ -25,9 +25,9 @@ Now, let's register the providers:
   registerProviders: ->
     @editorSubscription = atom.workspaceView.eachEditorView (editorView) =>
       if editorView.attached and not editorView.mini
-        provider = new ExampleProvider editorView
+        provider = new ExampleProvider editorView.editor
 
-        @autocomplete.registerProviderForEditorView provider, editorView
+        @autocomplete.registerProviderForEditorView provider, editorView.editor
 
         @providers.push provider
 ```
