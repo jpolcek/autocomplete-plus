@@ -1,47 +1,49 @@
 Since version 0.12.0 other packages can register suggestion providers for autocomplete-plus. Suggestion providers provide words that will be displayed in autocomplete-plus's suggestion list.
 
+The API for registering providers is currently evolving. Provider authors should join the Gitter room for `autocomplete-plus` (https://gitter.im/atom-community) to discuss the changes.
+
 Registering a suggestion provider
 ---------------------------------
 
-Every time a new EditorView is created, we have to register a provider for this specific view. But first, we have to wait for `autocomplete-plus` to load:
+Every time a new Editor is created, we have to register a provider for this specific editor. But first, we have to wait for `autocomplete-plus` to load:
 
 ```coffeescript
-ExampleProvider = require "./example-provider"
-
 module.exports =
   editorSubscription: null
-  autocomplete: null
   providers: []
+  autocomplete: null
+
   activate: ->
-    atom.packages.activatePackage("autocomplete-plus")
-      .then (pkg) =>
-        @autocomplete = pkg.mainModule
-        @registerProviders()
+    atom.packages.activatePackage('autocomplete-plus').then (pkg) =>
+      @autocomplete = pkg.mainModule
+      return unless @autocomplete?
+      Provider = (require './example-provider').ProviderClass(@autocomplete.Provider, @autocomplete.Suggestion)
+      return unless Provider?
+      @editorSubscription = atom.workspace.observeTextEditors((editor) => @registerProvider(Provider, editor))
 ```
 
 Now, let's register the providers:
 
 ```coffeescript
-  registerProviders: ->
-    @editorSubscription = atom.workspaceView.eachEditorView (editorView) =>
-      if editorView.attached and not editorView.mini
-        provider = new ExampleProvider editorView.editor
-
-        @autocomplete.registerProviderForEditorView provider, editorView.editor
-
-        @providers.push provider
+  registerProvider: (Provider, editor) ->
+    return unless Provider?
+    return unless editor?
+    editorView = atom.views.getView(editor)
+    return unless editorView?
+    if not editorView.mini
+      provider = new Provider(editor)
+      @autocomplete.registerProviderForEditor(provider, editor)
+      @providers.push(provider)
 ```
 
 Also, when the package is deactivated, we should clean up:
 
 ```coffeescript
   deactivate: ->
-    @editorSubscription?.off()
+    @editorSubscription?.dispose()
     @editorSubscription = null
 
-    @providers.forEach (provider) =>
-      @autocomplete.unregisterProvider provider
-
+    @providers.forEach (provider) => @autocomplete.unregisterProvider(provider)
     @providers = []
 ```
 
@@ -50,26 +52,27 @@ That's it for now. Let's implement the provider!
 Implementing the provider
 -------------------------
 
-A suggestion provider is a class that inherits from autocomplete-plus's [Provider](https://github.com/saschagehlich/autocomplete-plus/blob/master/lib/provider.coffee) class:
+A suggestion provider is a class that inherits from autocomplete-plus's [Provider](https://github.com/atom-community/autocomplete-plus/blob/master/lib/provider.coffee) class:
 
 ```coffeescript
-{Provider, Suggestion} = require "autocomplete-plus"
-class ExampleProvider extends Provider
+module.exports =
+ProviderClass: (Provider, Suggestion)  ->
+  class ExampleProvider extends Provider
 ```
 
-As you see, we also grab the [Suggestion](https://github.com/saschagehlich/autocomplete-plus/blob/master/lib/suggestion.coffee) class from autocomplete-plus. We will need this in the next step. 
+As you see, we also grab the [Suggestion](https://github.com/atom-community/autocomplete-plus/blob/master/lib/suggestion.coffee) class from autocomplete-plus. We will need this in the next step. 
 
 Now, this provider does nothing. Actually, you will run into error messages, since this provider does not override the `buildSuggestions()` method. Let's implement it:
 
 ```coffeescript
   buildSuggestions: ->
     suggestions = []
-    suggestions.push new Suggestion(this, word: "async", label: "@async")
-    suggestions.push new Suggestion(this, word: "attribute", label: "@attribute")
-    suggestions.push new Suggestion(this, word: "author", label: "@author")
-    suggestions.push new Suggestion(this, word: "beta", label: "@beta")
-    suggestions.push new Suggestion(this, word: "borrows", label: "@borrows")
-    suggestions.push new Suggestion(this, word: "bubbles", label: "@bubbles")
+    suggestions.push(new Suggestion(this, word: "async", label: "@async"))
+    suggestions.push(new Suggestion(this, word: "attribute", label: "@attribute"))
+    suggestions.push(new Suggestion(this, word: "author", label: "@author"))
+    suggestions.push(new Suggestion(this, word: "beta", label: "@beta"))
+    suggestions.push(new Suggestion(this, word: "borrows", label: "@borrows"))
+    suggestions.push(new Suggestion(this, word: "bubbles", label: "@bubbles"))
     return suggestions
 ```
 
@@ -92,12 +95,12 @@ Our example provider always displays the same suggestions, even though we typed 
     return unless prefix.length
 
     suggestions = []
-    suggestions.push new Suggestion(this, word: "async", label: "@async")
-    suggestions.push new Suggestion(this, word: "attributes", label: "@attribute")
-    suggestions.push new Suggestion(this, word: "author", label: "@author")
-    suggestions.push new Suggestion(this, word: "beta", label: "@beta")
-    suggestions.push new Suggestion(this, word: "borrows", label: "@borrows")
-    suggestions.push new Suggestion(this, word: "bubbles", label: "@bubbles")
+    suggestions.push(new Suggestion(this, word: "async", label: "@async"))
+    suggestions.push(new Suggestion(this, word: "attributes", label: "@attribute"))
+    suggestions.push(new Suggestion(this, word: "author", label: "@author"))
+    suggestions.push(new Suggestion(this, word: "beta", label: "@beta"))
+    suggestions.push(new Suggestion(this, word: "borrows", label: "@borrows"))
+    suggestions.push(new Suggestion(this, word: "bubbles", label: "@bubbles"))
     return suggestions
 ```
 
@@ -108,32 +111,33 @@ Now we only see the suggestions when entering a string that starts with `@`:
 But we still see _all_ suggestions. Let's filter them! We're using the `fuzzaldrin` package to do fuzzy string matching.
 
 ```coffeescript
-{Provider, Suggestion} = require "autocomplete-plus"
-fuzzaldrin = require "fuzzaldrin"
-class ExampleProvider extends Provider
-  wordRegex: /@\b\w*[a-zA-Z_]\w*\b/g
-  possibleWords: ["async", "attributes", "author", "beta", "borrows", "bubbles"]
-  buildSuggestions: ->
-    selection = @editor.getSelection()
-    prefix = @prefixOfSelection selection
-    return unless prefix.length
+fuzzaldrin = require('fuzzaldrin')
+module.exports =
+ProviderClass: (Provider, Suggestion)  ->
+  class ExampleProvider extends Provider
+    wordRegex: /@\b\w*[a-zA-Z_]\w*\b/g
+    possibleWords: ["async", "attributes", "author", "beta", "borrows", "bubbles"]
+    buildSuggestions: ->
+      selection = @editor.getSelection()
+      prefix = @prefixOfSelection selection
+      return unless prefix.length
 
-    suggestions = @findSuggestionsForPrefix prefix
-    return unless suggestions.length
-    return suggestions
+      suggestions = @findSuggestionsForPrefix prefix
+      return unless suggestions.length
+      return suggestions
 
-  findSuggestionsForPrefix: (prefix) ->
-    # Get rid of the leading @
-    prefix = prefix.replace /^@/, ''
+    findSuggestionsForPrefix: (prefix) ->
+      # Get rid of the leading @
+      prefix = prefix.replace /^@/, ''
 
-    # Filter the words using fuzzaldrin
-    words = fuzzaldrin.filter @possibleWords, prefix
+      # Filter the words using fuzzaldrin
+      words = fuzzaldrin.filter @possibleWords, prefix
 
-    # Builds suggestions for the words
-    suggestions = for word in words when word isnt prefix
-      new Suggestion this, word: word, prefix: prefix, label: "@#{word}"
+      # Builds suggestions for the words
+      suggestions = for word in words when word isnt prefix
+        new Suggestion this, word: word, prefix: prefix, label: "@#{word}"
 
-    return suggestions
+      return suggestions
 ```
 
 The result:
