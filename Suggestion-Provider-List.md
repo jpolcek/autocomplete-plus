@@ -28,6 +28,7 @@
 
 * https://github.com/vito/atom-autocomplete-gocode (deprecated, uses fork of `autocomplete-plus`)
 * https://atom.io/packages/autocomplete-clang (fork of `autocomplete`)
+* https://github.com/xumingthepoet/autocomplete-plus-elixir (never published)
 * https://atom.io/packages/autocomplete-jedi (fork of `autocomplete`)
 * https://atom.io/packages/rubymotion (extends default autocomplete package)
 
