@@ -6,10 +6,12 @@
 * https://atom.io/packages/autocomplete-bibtex
 * https://atom.io/packages/autocomplete-emojis
 * https://atom.io/packages/autocomplete-paths
+* https://github.com/kbrownlees/autocomplete-python-jedi (never published, unknown state)
 * https://atom.io/packages/autocomplete-snippets
 * https://atom.io/packages/go-plus
 * https://atom.io/packages/ide-flow
 * https://atom.io/packages/ide-haskell (pinned to old version)
+* https://atom.io/packages/language-hn
 * https://atom.io/packages/mavensmate-atom (pinned to old version)
 * https://atom.io/packages/project-palette-finder
 * https://atom.io/packages/racer
