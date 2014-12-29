@@ -6,6 +6,7 @@
 * https://atom.io/packages/autocomplete-bibtex
 * https://atom.io/packages/autocomplete-emojis
 * https://atom.io/packages/autocomplete-paths
+* https://github.com/Peekmo/atom-autocomplete-php (never published, unknown state)
 * https://github.com/kbrownlees/autocomplete-python-jedi (never published, unknown state)
 * https://atom.io/packages/autocomplete-snippets
 * https://atom.io/packages/go-plus
