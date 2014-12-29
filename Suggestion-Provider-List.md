@@ -7,6 +7,7 @@
 * https://atom.io/packages/autocomplete-paths
 * https://atom.io/packages/autocomplete-snippets
 * https://atom.io/packages/go-plus
+* https://atom.io/packages/ide-flow
 * https://atom.io/packages/ide-haskell (pinned to old version)
 * https://atom.io/packages/mavensmate-atom (pinned to old version)
 * https://atom.io/packages/project-palette-finder
