@@ -2,6 +2,7 @@
 
 * https://atom.io/packages/asciidoc-preview
 * https://atom.io/packages/atom-ctags
+* https://atom.io/packages/atom-ternjs
 * https://atom.io/packages/autocomplete-bibtex
 * https://atom.io/packages/autocomplete-emojis
 * https://atom.io/packages/autocomplete-paths
@@ -13,7 +14,6 @@
 * https://atom.io/packages/project-palette-finder
 * https://atom.io/packages/racer
 * https://atom.io/packages/rsense
-* https://atom.io/packages/atom-ternjs
 
 ## [autocomplete-plus-async](https://atom.io/packages/autocomplete-plus-async)
 
