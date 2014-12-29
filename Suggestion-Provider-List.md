@@ -1,4 +1,4 @@
-## autocomplete-plus
+## [autocomplete-plus](https://atom.io/packages/autocomplete-plus)
 
 * https://atom.io/packages/asciidoc-preview
 * https://atom.io/packages/atom-ctags
@@ -13,7 +13,7 @@
 * https://atom.io/packages/racer
 * https://atom.io/packages/rsense
 
-## autocomplete-plus-async
+## [autocomplete-plus-async](https://atom.io/packages/autocomplete-plus-async)
 
 * https://atom.io/packages/autocomplete-haxe
 
