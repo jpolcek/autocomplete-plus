@@ -22,3 +22,7 @@
 * https://github.com/vito/atom-autocomplete-gocode (deprecated, uses fork of `autocomplete-plus`)
 * https://atom.io/packages/autocomplete-jedi (fork of `autocomplete`)
 * https://atom.io/packages/autocomplete-clang (fork of `autocomplete`)
+
+## Claims Autocomplete, But Appears Dead
+
+* https://atom.io/packages/ios
