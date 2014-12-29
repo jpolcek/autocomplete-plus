@@ -19,6 +19,7 @@
 
 * https://atom.io/packages/atom-typescript-tools
 * https://atom.io/packages/autocomplete-haxe
+* https://atom.io/packages/omnisharp-atom
 
 ## Other Forks
 
