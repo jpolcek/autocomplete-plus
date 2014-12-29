@@ -1,3 +1,4 @@
+* https://atom.io/packages/asciidoc-preview
 * https://atom.io/packages/atom-ctags
 * https://atom.io/packages/autocomplete-bibtex
 * https://atom.io/packages/autocomplete-emojis
