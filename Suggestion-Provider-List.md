@@ -20,3 +20,4 @@
 ## Other Forks
 
 * https://github.com/vito/atom-autocomplete-gocode (deprecated)
+* https://atom.io/packages/autocomplete-jedi (fork of autocomplete)
