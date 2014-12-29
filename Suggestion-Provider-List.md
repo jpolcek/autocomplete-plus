@@ -20,6 +20,7 @@
 
 ## [autocomplete-plus-async](https://atom.io/packages/autocomplete-plus-async)
 
+* https://github.com/maun/atom-rust-plus (never published)
 * https://atom.io/packages/atom-typescript-tools
 * https://atom.io/packages/autocomplete-haxe
 * https://atom.io/packages/omnisharp-atom
