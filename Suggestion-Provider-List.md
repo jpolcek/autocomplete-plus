@@ -36,3 +36,9 @@
 ## Claims Autocomplete, But Appears Dead
 
 * https://atom.io/packages/ios
+
+## Providers That People Have Requested, That Are Not Yet Available:
+
+If you'd like to contribute and are interested in learning how to write an `autocomplete-plus` `Provider`, start here:
+
+* Less: https://github.com/atom-community/autocomplete-plus/issues/151
