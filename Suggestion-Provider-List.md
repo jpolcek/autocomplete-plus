@@ -41,4 +41,4 @@
 
 If you'd like to contribute and are interested in learning how to write an `autocomplete-plus` `Provider`, start here:
 
-* Less: https://github.com/atom-community/autocomplete-plus/issues/151
+* LESS: https://github.com/atom-community/autocomplete-plus/issues/151
