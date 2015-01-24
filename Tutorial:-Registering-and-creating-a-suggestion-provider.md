@@ -1,9 +1,14 @@
+# :rotating_light: This API is deprecated.
+
+You should go to https://github.com/atom-community/autocomplete-plus/wiki/Provider-API to read about the new provider API. Do not implement providers using the API below.
+
+## Deprecated Legacy API
+
 Since version 0.12.0 other packages can register suggestion providers for autocomplete-plus. Suggestion providers provide words that will be displayed in autocomplete-plus's suggestion list.
 
 The API for registering providers is currently evolving. Provider authors should join the Gitter room for `autocomplete-plus` (https://gitter.im/atom-community) to discuss the changes.
 
-Registering a suggestion provider
----------------------------------
+### Registering a suggestion provider
 
 Every time a new Editor is created, we have to register a provider for this specific editor. But first, we have to wait for `autocomplete-plus` to load:
 
@@ -49,8 +54,7 @@ Also, when the package is deactivated, we should clean up:
 
 That's it for now. Let's implement the provider!
 
-Implementing the provider
--------------------------
+### Implementing the provider
 
 A suggestion provider is a class that inherits from autocomplete-plus's [Provider](https://github.com/atom-community/autocomplete-plus/blob/master/lib/provider.coffee) class:
 
@@ -80,8 +84,7 @@ And voilà, this is the result:
 
 ![ExampleProvider](http://s7.directupload.net/images/140411/vcokpfiv.png)
 
-Content-aware suggestions
--------------------------
+### Content-aware suggestions
 
 Our example provider always displays the same suggestions, even though we typed something that has nothing to do with the suggestions. So let's make the suggestions content-aware, meaning that we only want to display our suggestions when we have typed `@`, followed by a word.
 
@@ -144,8 +147,7 @@ The result:
 
 ![ExampleProvider](http://s7.directupload.net/images/140411/56k2sne7.gif)
 
-Custom confirmation actions
----------------------------
+### Custom confirmation actions
 
 Per default, when the user confirms the autocompletion, `autocomplete-plus` will just replace the Suggestion's `prefix` attribute with the given `word`. Let's replace it with some custom content by overriding the `confirm(Suggestion)` method.
 
