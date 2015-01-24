@@ -15,9 +15,8 @@ You can create a provider by defining an object with the following properties:
 provider =
   selector: '.source.js,.source.coffee' # This provider will be run on JavaScript and Coffee files
   blacklist: '.source.js .comment' # This provider will not be run when the cursor is inside a JavaScript comment
-  requestHandler: (options) =>
+  requestHandler: (options) ->
     # Build your suggestions here...
-
   dispose: ->
     # Your dispose logic here
 ```
@@ -27,8 +26,8 @@ provider =
 Some providers satisfy a suggestion request in an asynchronous way (e.g. it may need to dispatch requests to an external process to get suggestions). To asynchronously provide suggestions, simply return a `Promise` from your `requestHandler`:
 
 ```coffeescript
-requestHandler: (options) =>
-  return new Promise (resolve) =>
+requestHandler: (options) ->
+  return new Promise (resolve) ->
     # Build your suggestions here asynchronously...
     resolve(suggestions) # When you are done, call resolve and pass your suggestions to it
 ```
@@ -49,7 +48,7 @@ Your suggestions should be returned from `requestHandler` as an array of objects
 provider =
   selector: '.source.js,.source.coffee' # This provider will be run on JavaScript and Coffee files
   blacklist: '.source.js .comment' # This provider will not be run when the cursor is inside a JavaScript comment
-  requestHandler: (options) =>
+  requestHandler: (options) ->
     [{
       word: 'hello',
       prefix: 'h',
@@ -62,3 +61,21 @@ provider =
   dispose: ->
     # Your dispose logic here
 ```
+
+## Registering Your Provider With `autocomplete+`
+
+The Provider API makes use of Atom's `service-hub` instance located at `atom.services`. To register your provider:
+
+```coffeescript
+provider = 
+  selector: '.source.js'
+  requestHandler: (options) ->
+  dispose: -> 
+# Register the provider
+registration = atom.services.provide('autocomplete.provider', '1.0.0', {provider:provider})
+...
+# When you are deactivating your package, make sure you dispose your registration:
+registration.dispose()
+```
+
+You only need to call provide once, and you don't need any dependency on `autocomplete+` for this to work. If the user does not have `autocomplete+` installed, providing the service will do nothing. Once `autocomplete+` is installed and activated, it will automatically discover all providers that are providing a service.
