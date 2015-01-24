@@ -1,4 +1,4 @@
-# :rotating_light: This API is deprecated.
+# :rotating_light: :rotating_light: :rotating_light: This API is deprecated. :rotating_light: :rotating_light: :rotating_light: 
 
 You should go to https://github.com/atom-community/autocomplete-plus/wiki/Provider-API to read about the new provider API. Do not implement providers using the API below.
 
