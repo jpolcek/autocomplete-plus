@@ -32,6 +32,18 @@ requestHandler: (options) ->
     resolve(suggestions) # When you are done, call resolve and pass your suggestions to it
 ```
 
+## The Request's Options Object
+
+An `options` object will be passed to your `requestHandler` function, with the following properties:
+
+* `editor`: The current `TextEditor`
+* `buffer`: The current `TextBuffer`
+* `cursor`: The most recently added cursor, at the time the autocomplete request was dispatched
+* `position`: The position of the cursor
+* `scope`: The [scope descriptor](https://atom.io/docs/latest/advanced/scopes-and-scope-descriptors) for the current cursor position
+* `scopeChain`: The [scope chain](https://atom.io/docs/latest/advanced/scopes-and-scope-descriptors) for the current cursor position
+* 'prefix': The prefix for the word immediately preceding the current cursor position
+
 ## Suggestions
 
 Your suggestions should be returned from `requestHandler` as an array of objects with the following properties:
