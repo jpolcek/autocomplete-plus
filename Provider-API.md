@@ -9,7 +9,7 @@ You can create a provider by defining an object with the following properties:
 * `selector` (required): Defines the scope selector(s) (can be comma-separated) for which your provider should receive suggestion requests
 * `requestHandler` (required): Is called when a suggestion request has been dispatched by `autocomplete+` to your provider; you should return an array of suggestions (if any) in the order you would like them displayed to the user
 * `blacklist` (optional): Defines the scope selector(s) (can be comma-separated) for which your provider should not be used
-* `providerblacklist` (optional): Defines an associative array of provider id to scope selector(s) for which the provider(s) should not be used - this currently only supports a `autocomplete-plus-fuzzyprovider` id
+* `providerblacklist` (optional): Defines an associative array of provider id to scope selector(s) for which the provider(s) should not be used - this currently only supports the `autocomplete-plus-fuzzyprovider` id
 * `id` (optional): An identifier that can be used by other providers to suppress your provider from being used for scope selector(s); consider using a convention of `<package-name>-<provider-name>` (i.e. `autocomplete-plus`'s `Fuzzyprovider` has the `id`: `autocomplete-plus-fuzzyprovider`)
 * `dispose` (optional): Will be called if your provider is being destroyed by `autocomplete+`
 
