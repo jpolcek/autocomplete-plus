@@ -4,6 +4,7 @@
 * https://atom.io/packages/atom-ctags
 * https://atom.io/packages/atom-hack
 * https://atom.io/packages/atom-ternjs
+* https://atom.io/packages/atom-typescript
 * https://atom.io/packages/autocomplete-bibtex
 * https://atom.io/packages/autocomplete-emojis
 * https://atom.io/packages/autocomplete-paths
