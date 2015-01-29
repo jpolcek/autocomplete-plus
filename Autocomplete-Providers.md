@@ -18,6 +18,7 @@
 * https://atom.io/packages/project-palette-finder
 * https://atom.io/packages/racer
 * https://atom.io/packages/rsense
+* https://atom.io/packages/autocomplete-haskell
 
 ## [autocomplete-plus-async](https://atom.io/packages/autocomplete-plus-async)
 
