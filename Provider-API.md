@@ -80,6 +80,10 @@ provider =
 
 ## Registering Your Provider With `autocomplete+`
 
+**Warning**: The method of service definition will be changing to a config defined in `package.json` (still using `service-hub` under the covers). See https://github.com/atom/atom/pull/5277 for more information. The information that follows can be used as a temporary measure to define your service, but will have to change once atom/atom#5277 is merged and released.
+
+--
+
 The Provider API makes use of Atom's `service-hub` instance located at `atom.services`. To register your provider:
 
 ```coffeescript
