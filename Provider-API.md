@@ -57,6 +57,8 @@ Your suggestions should be returned from `requestHandler` as an array of objects
 * `className` (optional): Allows you to style your suggestion via CSS, if desired
 * `onWillConfirm` (optional): If you supply a callback, it will be called _after_ a user has selected a suggestion, but _before_ the suggestion `prefix` is replaced by the suggestion `word` in the buffer
 * `onDidConfirm` (optional): If you supply a callback, it will be called _after_ the suggestion `prefix` is replaced by the suggestion `word` in the buffer
+* `isSnippet` (optional): If your suggestion is a snippet, you can indicate as such and we will expand the snippet after insertion
+* `snippet` (optional): If your suggestion defines an anonymous snippet, you can provide the snippet here and it will be inserted via the `snippets` package
 
 ```coffeescript
 provider =
