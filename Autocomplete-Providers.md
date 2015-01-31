@@ -20,6 +20,7 @@
 * https://atom.io/packages/racer
 * https://atom.io/packages/rsense
 * https://atom.io/packages/autocomplete-haskell
+* https://atom.io/packages/autocomplete-glsl
 
 ## [autocomplete-plus-async](https://atom.io/packages/autocomplete-plus-async)
 
