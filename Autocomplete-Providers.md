@@ -67,6 +67,9 @@ Grammar | Scope | Provider | ID | Status
 [YAML](https://atom.io/packages/language-yaml) | `source.yaml` | | | 
 
 ## Providers For Third-Party Grammars
+
+Grammar | Scope | Provider | ID | Status
+------- | ----- | -------- | -- | ------
 [Dockerfile](https://atom.io/packages/language-docker) | `source.dockerfile` | | | 
 [HTML (Tcl)](https://atom.io/packages/language-tcl) | `text.html.tcl` | | | 
 [AsciiDoc](https://atom.io/packages/language-asciidoc) | `source.asciidoc` | | | 
