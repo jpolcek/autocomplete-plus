@@ -7,9 +7,9 @@ All     | `*`   | `SymbolProvider` | `autocomplete-plus-symbolprovider` | `WIP` 
 
 ## Providers For Built-In Grammars
 
-Grammar                                            | Scope                     | Provider | ID | Status
--------------------------------------------------- | ------------------------- | -------- | -- | ------
-Null Grammar                                       | `text.plain.null-grammar` |          |    | 
+Grammar                                            | Scope                     | Provider | ID     | Status
+-------------------------------------------------- | ------------------------- | -------- | ------ | ------
+Null Grammar                                       | `text.plain.null-grammar` | &nbsp;   | &nbsp; | &nbsp;
 [CoffeeScript (Literate)](https://atom.io/packages/language-coffee-script) | `source.litcoffee` | | | 
 [CoffeeScript](https://atom.io/packages/language-coffee-script) | `source.coffee` | | | 
 [JSON](https://atom.io/packages/language-json) | `source.json` | | | 
