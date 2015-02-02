@@ -70,10 +70,10 @@ Null Grammar                                       | `text.plain.null-grammar` |
 
 Grammar | Scope | Provider | ID | Status
 ------- | ----- | -------- | -- | ------
-[Dockerfile](https://atom.io/packages/language-docker) | `source.dockerfile` | | | 
-[HTML (Tcl)](https://atom.io/packages/language-tcl) | `text.html.tcl` | | | 
-[AsciiDoc](https://atom.io/packages/language-asciidoc) | `source.asciidoc` | | | 
-[Tcl](https://atom.io/packages/language-tcl) | `source.tcl` | | | 
+[Dockerfile](https://atom.io/packages/language-docker) | `source.dockerfile` | &nbsp;   | &nbsp; | &nbsp;
+[HTML (Tcl)](https://atom.io/packages/language-tcl) | `text.html.tcl` | &nbsp;   | &nbsp; | &nbsp;
+[AsciiDoc](https://atom.io/packages/language-asciidoc) | `source.asciidoc` | &nbsp;   | &nbsp; | &nbsp;
+[Tcl](https://atom.io/packages/language-tcl) | `source.tcl` | &nbsp;   | &nbsp; | &nbsp;
 
 ## [autocomplete-plus](https://atom.io/packages/autocomplete-plus)
 
