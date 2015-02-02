@@ -68,9 +68,9 @@ Null Grammar                                       | `text.plain.null-grammar` |
 
 ## Providers For Third-Party Grammars
 
-Grammar | Scope | Provider | ID | Status
-------- | ----- | -------- | -- | ------
-[Dockerfile](https://atom.io/packages/language-docker) | `source.dockerfile` | &nbsp;   | &nbsp; | &nbsp;
+Grammar                                                | Scope                     | Provider | ID     | Status
+------------------------------------------------------ | ------------------------- | -------- | ------ | ------
+[Dockerfile](https://atom.io/packages/language-docker) | `source.dockerfile`       | &nbsp;   | &nbsp; | &nbsp;
 [HTML (Tcl)](https://atom.io/packages/language-tcl) | `text.html.tcl` | &nbsp;   | &nbsp; | &nbsp;
 [AsciiDoc](https://atom.io/packages/language-asciidoc) | `source.asciidoc` | &nbsp;   | &nbsp; | &nbsp;
 [Tcl](https://atom.io/packages/language-tcl) | `source.tcl` | &nbsp;   | &nbsp; | &nbsp;
