@@ -83,11 +83,12 @@
 
 ## Providers Not Tied To A Specific Grammar
 
-| Scope | Provider                                                                | ID                                      | Status                |
-|:------|:------------------------------------------------------------------------|:----------------------------------------|:----------------------|
-| `*`   | [autocomplete-snippets](https://atom.io/packages/autocomplete-snippets) | `autocomplete-snippets-snippetprovider` | `1.0.0`               |
-| `*`   | [autocomplete-paths](https://atom.io/packages/autocomplete-paths)       | `autocomplete-paths-pathsprovider`      | `1.0.0`               |
-| `*`   | [atom-ctags](https://atom.io/packages/atom-ctags)                       | &nbsp;                                  | `Uses Deprecated API` |
+| Scope                                                                                   | Provider                                                                  | ID                                      | Status                |
+|:----------------------------------------------------------------------------------------|:--------------------------------------------------------------------------|:----------------------------------------|:----------------------|
+| `*`                                                                                     | [autocomplete-snippets](https://atom.io/packages/autocomplete-snippets)   | `autocomplete-snippets-snippetprovider` | `1.0.0`               |
+| `*`                                                                                     | [autocomplete-paths](https://atom.io/packages/autocomplete-paths)         | `autocomplete-paths-pathsprovider`      | `1.0.0`               |
+| `*`                                                                                     | [atom-ctags](https://atom.io/packages/atom-ctags)                         | &nbsp;                                  | `Uses Deprecated API` |
+| `.source.css`, `.source.css.less`, `.source.sass`, `.source.css.scss`, `.source.stylus` | [project-palette-finder](https://atom.io/packages/project-palette-finder) | `project-palette-provider`              | `1.0.0`               |
 
 --
 
@@ -109,7 +110,6 @@ If you'd like to contribute and are interested in learning how to write an `auto
 * https://atom.io/packages/ide-haskell (see: https://github.com/chaika2013/ide-haskell/pull/34 for API 1.0.0 compatibility)
 * https://atom.io/packages/ios (doesn't make use of autocomplete-plus)
 * https://atom.io/packages/language-hn (see: https://github.com/ignaciocases/language-hn/issues/1 for API 1.0.0 compatibility)
-* https://atom.io/packages/project-palette-finder (see: https://github.com/abe33/atom-project-palette-finder/issues/28 for API 1.0.0 compatibility)
 * https://atom.io/packages/rsense (see: https://github.com/rsense/atom-rsense/issues/1 for API 1.0.0 compatibility)
 
 ## Deprecated Providers
