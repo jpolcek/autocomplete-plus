@@ -80,22 +80,21 @@ provider =
 
 ## Registering Your Provider With `autocomplete+`
 
-**Warning**: The method of service definition will change to a config section defined in `package.json` (still using `service-hub` under the covers). See https://github.com/atom/atom/pull/5277 for more information. The information that follows can be used as a temporary measure to define your service, but will have to change once https://github.com/atom/atom/pull/5277 is merged and released.
+The Provider API makes use of Atom's services API, which is driven from configuration in your package's `package.json` file. To register your provider, add the following JSON to your `package.json`:
 
---
-
-The Provider API makes use of Atom's `service-hub` instance located at `atom.services`. To register your provider:
-
-```coffeescript
-provider = 
-  selector: '.source.js'
-  requestHandler: (options) ->
-  dispose: -> 
-# Register the provider
-registration = atom.services.provide('autocomplete.provider', '1.0.0', {provider:provider})
-...
-# When you are deactivating your package, make sure you dispose your registration:
-registration.dispose()
+```javascript
+"providedServices": {
+  "autocomplete.provider": {
+    "versions": {
+      "1.0.0": "provide"
+    }
+  }
+}
 ```
 
-You only need to call provide once, and you don't need any dependency on `autocomplete+` for this to work. If the user does not have `autocomplete+` installed, providing the service will do nothing. Once `autocomplete+` is installed and activated, it will automatically discover all providers that are providing a service.
+Then, in your `main.coffee` (or whatever file you define as your `main` in `package.json` i.e. `"main": "./lib/your-main"` would imply `your-main.coffee`), add the following:
+
+```coffeescript
+provide: ->
+  return {provider: @yourProviderHere}
+```
