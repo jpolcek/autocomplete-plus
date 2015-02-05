@@ -80,6 +80,40 @@ provider =
 
 ## Registering Your Provider With `autocomplete+`
 
+### API 1.1.0
+
+`v1.1.0` of the API allows you to register multiple providers. This adjusts the anonymous object that you provide.
+
+In your `package.json`, add:
+
+```javascript
+"providedServices": {
+  "autocomplete.provider": {
+    "versions": {
+      "1.1.0": "provide"
+    }
+  }
+}
+```
+
+Then, in your `main.coffee` (or whatever file you define as your `main` in `package.json` i.e. `"main": "./lib/your-main"` would imply `your-main.coffee`), add the following:
+
+For a single provider:
+
+```coffeescript
+provide: ->
+  return {providers: [@yourProviderHere]}
+```
+
+For multiple providers:
+
+```coffeescript
+provide: ->
+  return {providers: [@yourProviderHere, @yourOtherProviderHere]}
+```
+
+### API 1.0.0
+
 The Provider API makes use of Atom's services API, which is driven from configuration in your package's `package.json` file. To register your provider, add the following JSON to your `package.json`:
 
 ```javascript
