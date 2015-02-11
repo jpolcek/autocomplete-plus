@@ -44,7 +44,7 @@ An `options` object will be passed to your `requestHandler` function, with the f
 * `position`: The position of the cursor
 * `scope`: The [scope descriptor](https://atom.io/docs/latest/advanced/scopes-and-scope-descriptors) for the current cursor position
 * `scopeChain`: The [scope chain](https://atom.io/docs/latest/advanced/scopes-and-scope-descriptors) for the current cursor position
-* 'prefix': The prefix for the word immediately preceding the current cursor position
+* `prefix`: The prefix for the word immediately preceding the current cursor position
 
 ## Suggestions
 
