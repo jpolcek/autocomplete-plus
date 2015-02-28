@@ -77,8 +77,8 @@
 | [GLSL](https://atom.io/packages/language-glsl)            | `source.glsl`     | [autocomplete-glsl](https://atom.io/packages/autocomplete-glsl)         | `autocomplete-glsl-glslprovider` | `1.0.0`               |
 | [Haskell](https://atom.io/packages/language-haskell)      | `source.haskell`  | [autocomplete-haskell](https://atom.io/packages/autocomplete-haskell)   |                                  | `1.0.0`               |
 | [Rust](https://atom.io/packages/language-rust)             | `source.rust`     | [racer](https://atom.io/packages/racer)                                 | `racer-racerprovider`            | `1.0.0`               |
+| [Typescript](https://atom.io/packages/language-typescript) | `source.ts`       | [atom-typescript](https://atom.io/packages/atom-typescript)             |                                  | `1.1.0`               |
 | [Typescript](https://atom.io/packages/language-typescript) | `source.ts`       | [atom-typescript-tools](https://atom.io/packages/atom-typescript-tools) |                                  | `1.0.0`               |
-| [Typescript](https://atom.io/packages/language-typescript) | `source.ts`       | [atom-typescript](https://atom.io/packages/atom-typescript)             |                                  | `1.0.0`               |
 | [Visualforce](https://atom.io/packages/mavensmate-atom)   | `visualforce`     | [mavensmate-atom](https://atom.io/packages/mavensmate-atom)             | `mavensmate-vfprovider`          | `1.0.0`               |
 
 ## Providers Not Tied To A Specific Grammar
