@@ -1,3 +1,3 @@
 Welcome to the autocomplete-plus wiki!
 
-[Provider API]
+[[Provider API]]
