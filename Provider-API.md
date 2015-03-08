@@ -18,7 +18,7 @@ provider =
 
   # Required: Return a promise, an array of suggestions, or null.
   getSuggestions: ({editor, bufferPosition, scopeDescriptor, prefix}) ->
-    new Promse (resolve) ->
+    new Promise (resolve) ->
       resolve([text: 'something'])
 
   # (optional): called _after_ the suggestion `replacementPrefix` is replaced
@@ -71,7 +71,7 @@ provider =
   disableForSelector: '.source.js .comment'
 
   getSuggestions: ({editor, bufferPosition, scopeDescriptor, prefix}) ->
-    new Promse (resolve) ->
+    new Promise (resolve) ->
       # Find your suggestions here
       suggestion =
         text: 'someText' # OR
@@ -160,6 +160,6 @@ provider =
     # Get the text for the line up to the triggered buffer position
     line = editor.getTextInRange([[bufferPosition.row, 0], bufferPosition])
 
-    # Match the lregex to the line, and return the match
+    # Match the regex to the line, and return the match
     line.match(regex)?[0] or ''
 ```
