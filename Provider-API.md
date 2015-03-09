@@ -89,7 +89,7 @@ Your suggestions should be returned from `getSuggestions` as an array of objects
 * `snippet` (required; or `text`): A snippet string. This will allow users to tab through function arguments or other options. e.g. `'myFunction(${1:arg1}, ${2:arg2})'`. See the [snippets](https://github.com/atom/snippets) package for more information.
 * `replacementPrefix` (optional): The text immediately preceding the cursor, which will be replaced by the `text`. If not provided, the prefix passed into `getSuggestions` will be used.
 * `rightLabel` (optional): An indicator (e.g. `function`, `variable`) denoting the "kind" of suggestion this represents
-* `rightLabelHTML` (optional): If true, indicates that your label includes HTML; if false, your label will be wrapped and styled by `autocomplete+`
+* `rightLabelHTML` (optional): Use this instead of `rightLabel` if you want to use html for the right label.
 * `className` (optional): Class name for the suggestion in the suggestion list. Allows you to style your suggestion via CSS, if desired
 
 ## Registering Your Provider With `autocomplete+`
