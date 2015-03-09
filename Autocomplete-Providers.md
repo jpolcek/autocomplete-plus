@@ -89,7 +89,7 @@
 | `*`                                                                                     | [autocomplete-paths](https://atom.io/packages/autocomplete-paths)         | `autocomplete-paths-pathsprovider`      | `1.0.0`               |
 | `*`                                                                                     | [atom-ctags](https://atom.io/packages/atom-ctags)                         | `autocomplete-ctags-ctagssprovider`       | `1.0.0` |
 | `.source.css`, `.source.css.less`, `.source.sass`, `.source.css.scss`, `.source.stylus` | [project-palette-finder](https://atom.io/packages/project-palette-finder) | `project-palette-provider`              | `1.0.0`               |
-
+| `*` | [you-complete-me](https://atom.io/packages/you-complete-me) | | `2.0.0` |
 --
 
 ## Providers Requested By The Community
