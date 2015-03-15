@@ -147,7 +147,7 @@ provider =
   getSuggestions: ({editor, bufferPosition}) ->
     prefix = @getPrefix(editor, bufferPosition)
 
-    new Promse (resolve) ->
+    new Promise (resolve) ->
       suggestion =
         text: 'someText'
         replacementPrefix: prefix
