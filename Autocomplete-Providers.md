@@ -1,95 +1,96 @@
 ## Built-In Providers
 
-| Grammar | Scope | Provider         | ID                                 | Status                               |
-|:--------|:------|:-----------------|:-----------------------------------|:-------------------------------------|
-| All     | `*`   | `FuzzyProvider`  | `autocomplete-plus-fuzzyprovider`  | `Deprecated`                         |
-| All     | `*`   | `SymbolProvider` | `autocomplete-plus-symbolprovider` | `WIP` (Will Replace `FuzzyProvider`) |
+| Grammar | Selector | Provider         | Status                               |
+|:--------|:---------|:-----------------|:-------------------------------------|
+| All     | `*`      | `FuzzyProvider`  | `Deprecated`                         |
+| All     | `*`      | `SymbolProvider` | `WIP` (Will Replace `FuzzyProvider`) |
 
 ## Providers For Built-In Grammars
 
-| Grammar                                                                          | Scope                              | Provider                                                            | ID                                   | API Status |
-|:---------------------------------------------------------------------------------|:-----------------------------------|:--------------------------------------------------------------------|:-------------------------------------|:-----------|
-| Null Grammar                                                                     | `text.plain.null-grammar`          | &nbsp;                                                              | &nbsp;                               | &nbsp;     |
-| [CoffeeScript (Literate)](https://atom.io/packages/language-coffee-script)       | `source.litcoffee`                 |                                                                     |                                      |            |
-| [CoffeeScript](https://atom.io/packages/language-coffee-script)                  | `source.coffee`                    |                                                                     |                                      |            |
-| [JSON](https://atom.io/packages/language-json)                                   | `source.json`                      |                                                                     |                                      |            |
-| [Shell Session](https://atom.io/packages/language-shellscript)                   | `text.shell-session`               |                                                                     |                                      |            |
-| [Shell Script](https://atom.io/packages/language-shellscript)                    | `source.shell`                     |                                                                     |                                      |            |
-| [Hyperlink](https://atom.io/packages/language-hyperlink)                         | `text.hyperlink`                   |                                                                     |                                      |            |
-| [TODO](https://atom.io/packages/language-todo)                                   | `text.todo`                        |                                                                     |                                      |            |
-| [C](https://atom.io/packages/language-c)                                         | `source.c`                         |                                                                     |                                      |            |
-| [C++](https://atom.io/packages/language-c)                                       | `source.cpp`                       | [atom-hack](https://atom.io/packages/atom-hack)                     |                                      | `1.0.0`    |
-| [Clojure](https://atom.io/packages/language-clojure)                             | `source.clojure`                   |                                                                     |                                      |            |
-| [CSS](https://atom.io/packages/language-css)                                     | `source.css`                       | [autocomplete-css](https://atom.io/packages/autocomplete-css) | `autocomplete-css-cssprovider`                                      | `1.1.0`           |
-| [GitHub Markdown](https://atom.io/packages/language-gfm)                         | `source.gfm`                       | [autocomplete-bibtex](https://atom.io/packages/autocomplete-bibtex) | `autocomplete-bibtex-bibtexprovider` | `1.0.0`    |
-| [Git Config](https://atom.io/packages/language-git)                              | `source.git-config`                |                                                                     |                                      |            |
-| [Git Commit Message](https://atom.io/packages/language-git)                      | `text.git-commit`                  |                                                                     |                                      |            |
-| [Git Rebase Message](https://atom.io/packages/language-git)                      | `text.git-rebase`                  |                                                                     |                                      |            |
-| [HTML (Go)](https://atom.io/packages/language-go)                                | `text.html.gohtml`                 |                                                                     |                                      |            |
-| [Go](https://atom.io/packages/language-go)                                       | `source.go`                        | [go-plus](https://atom.io/packages/go-plus)                         | `go-plus-gocodeprovider`             | `2.0.0`    |
-| [Go Template](https://atom.io/packages/language-go)                              | `source.gotemplate`                |                                                                     |                                      |            |
-| [HTML](https://atom.io/packages/language-html)                                   | `text.html.basic`                  | [autocomplete-html](https://atom.io/packages/autocomplete-html)                                                                   | `autocomplete-html-htmlprovider`                                     |   `1.1.0`         |
-| [JavaScript](https://atom.io/packages/language-javascript)                       | `source.js`                        | [atom-ternjs](https://atom.io/packages/atom-ternjs)                 | `atom-ternjs-provider`               | `2.0.0`    |
-| [Java Properties](https://atom.io/packages/language-java)                        | `source.java-properties`           |                                                                     |                                      |            |
-| [Regular Expressions (JavaScript)](https://atom.io/packages/language-javascript) | `source.js.regexp`                 |                                                                     |                                      |            |
-| [JavaServer Pages](https://atom.io/packages/language-java)                       | `text.html.jsp`                    |                                                                     |                                      |            |
-| [Java](https://atom.io/packages/language-java)                                   | `source.java`                      |                                                                     |                                      |            |
-| [JUnit Test Report](https://atom.io/packages/language-java)                      | `text.junit-test-report`           |                                                                     |                                      |            |
-| [Makefile](https://atom.io/packages/language-make)                               | `source.makefile`                  |                                                                     |                                      |            |
-| [LESS](https://atom.io/packages/language-less)                                   | `source.css.less`                  |                                                                     |                                      |            |
-| [SQL (Mustache)](https://atom.io/packages/language-mustache)                     | `source.sql.mustache`              |                                                                     |                                      |            |
-| [HTML (Mustache)](https://atom.io/packages/language-mustache)                    | `text.html.mustache`               |                                                                     |                                      |            |
-| [Objective-C++](https://atom.io/packages/language-objective-c)                   | `source.objcpp`                    |                                                                     |                                      |            |
-| [Strings File](https://atom.io/packages/language-objective-c)                    | `source.strings`                   |                                                                     |                                      |            |
-| [Objective-C](https://atom.io/packages/language-objective-c)                     | `source.objc`                      |                                                                     |                                      |            |
-| [Property List (XML)](https://atom.io/packages/language-property-list)           | `text.xml.plist`                   |                                                                     |                                      |            |
-| [Property List (Old-Style)](https://atom.io/packages/language-property-list)     | `source.plist`                     |                                                                     |                                      |            |
-| [Perl](https://atom.io/packages/language-perl)                                   | `source.perl`                      |                                                                     |                                      |            |
-| [PHP](https://atom.io/packages/language-php)                                     | `text.html.php`                    |                                                                     |                                      |            |
-| PHP                                                                              | `source.php`                       | [atom-hack](https://atom.io/packages/atom-hack)                     |                                      | `1.0.0`    |
-| [Python Console](https://atom.io/packages/language-python)                       | `text.python.console`              |                                                                     |                                      |            |
-| [Python Traceback](https://atom.io/packages/language-python)                     | `text.python.traceback`            |                                                                     |                                      |            |
-| [Regular Expressions (Python)](https://atom.io/packages/language-python)         | `source.regexp.python`             |                                                                     |                                      |            |
-| [Python](https://atom.io/packages/language-python)                               | `source.python`                    |                                                                     |                                      |            |
-| [Ruby on Rails (RJS)](https://atom.io/packages/language-ruby-on-rails)           | `source.ruby.rails.rjs`            |                                                                     |                                      |            |
-| [Ruby](https://atom.io/packages/language-ruby)                                   | `source.ruby`                      |                                                                     |                                      |            |
-| [HTML (Ruby - ERB)](https://atom.io/packages/language-ruby)                      | `text.html.erb`                    |                                                                     |                                      |            |
-| [HTML (Rails)](https://atom.io/packages/language-ruby-on-rails)                  | `text.html.ruby`                   |                                                                     |                                      |            |
-| [SQL (Rails)](https://atom.io/packages/language-ruby-on-rails)                   | `source.sql.ruby`                  |                                                                     |                                      |            |
-| [JavaScript (Rails)](https://atom.io/packages/language-ruby-on-rails)            | `source.js.rails source.js.jquery` |                                                                     |                                      |            |
-| [Ruby on Rails](https://atom.io/packages/language-ruby-on-rails)                 | `source.ruby.rails`                |                                                                     |                                      |            |
-| [Sass](https://atom.io/packages/language-sass)                                   | `source.sass`                      |                                                                     |                                      |            |
-| [Plain Text](https://atom.io/packages/language-text)                             | `text.plain`                       |                                                                     |                                      |            |
-| [SCSS](https://atom.io/packages/language-sass)                                   | `source.css.scss`                  |                                                                     |                                      |            |
-| [SQL](https://atom.io/packages/language-sql)                                     | `source.sql`                       |                                                                     |                                      |            |
-| [TOML](https://atom.io/packages/language-toml)                                   | `source.toml`                      |                                                                     |                                      |            |
-| [XSL](https://atom.io/packages/language-xml)                                     | `text.xml.xsl`                     |                                                                     |                                      |            |
-| [XML](https://atom.io/packages/language-xml)                                     | `text.xml`                         |                                                                     |                                      |            |
-| [YAML](https://atom.io/packages/language-yaml)                                   | `source.yaml`                      |                                                                     |                                      |            |
+| Grammar                                                                          | Selector                           | Provider                                                            | API Status |
+|:---------------------------------------------------------------------------------|:-----------------------------------|:--------------------------------------------------------------------|:-----------|
+| Null Grammar                                                                     | `text.plain.null-grammar`          | &nbsp;                                                              | &nbsp;     |
+| [CoffeeScript (Literate)](https://atom.io/packages/language-coffee-script)       | `source.litcoffee`                 |                                                                     |            |
+| [CoffeeScript](https://atom.io/packages/language-coffee-script)                  | `source.coffee`                    |                                                                     |            |
+| [JSON](https://atom.io/packages/language-json)                                   | `source.json`                      |                                                                     |            |
+| [Shell Session](https://atom.io/packages/language-shellscript)                   | `text.shell-session`               |                                                                     |            |
+| [Shell Script](https://atom.io/packages/language-shellscript)                    | `source.shell`                     |                                                                     |            |
+| [Hyperlink](https://atom.io/packages/language-hyperlink)                         | `text.hyperlink`                   |                                                                     |            |
+| [TODO](https://atom.io/packages/language-todo)                                   | `text.todo`                        |                                                                     |            |
+| [C](https://atom.io/packages/language-c)                                         | `source.c`                         |                                                                     |            |
+| [C++](https://atom.io/packages/language-c)                                       | `source.cpp`                       | [atom-hack](https://atom.io/packages/atom-hack)                     | `1.0.0`    |
+| [Clojure](https://atom.io/packages/language-clojure)                             | `source.clojure`                   |                                                                     |            |
+| [CSS](https://atom.io/packages/language-css)                                     | `source.css`                       | [autocomplete-css](https://atom.io/packages/autocomplete-css)       | `2.0.0`    |
+| [GitHub Markdown](https://atom.io/packages/language-gfm)                         | `source.gfm`                       | [autocomplete-bibtex](https://atom.io/packages/autocomplete-bibtex) | `1.1.0`    |
+| [Git Config](https://atom.io/packages/language-git)                              | `source.git-config`                |                                                                     |            |
+| [Git Commit Message](https://atom.io/packages/language-git)                      | `text.git-commit`                  |                                                                     |            |
+| [Git Rebase Message](https://atom.io/packages/language-git)                      | `text.git-rebase`                  |                                                                     |            |
+| [HTML (Go)](https://atom.io/packages/language-go)                                | `text.html.gohtml`                 |                                                                     |            |
+| [Go](https://atom.io/packages/language-go)                                       | `source.go`                        | [go-plus](https://atom.io/packages/go-plus)                         | `2.0.0`    |
+| [Go Template](https://atom.io/packages/language-go)                              | `source.gotemplate`                |                                                                     |            |
+| [HTML](https://atom.io/packages/language-html)                                   | `text.html.basic`                  | [autocomplete-html](https://atom.io/packages/autocomplete-html)     | `2.0.0`    |
+| [JavaScript](https://atom.io/packages/language-javascript)                       | `source.js`                        | [atom-ternjs](https://atom.io/packages/atom-ternjs)                 | `2.0.0`    |
+| [Java Properties](https://atom.io/packages/language-java)                        | `source.java-properties`           |                                                                     |            |
+| [Regular Expressions (JavaScript)](https://atom.io/packages/language-javascript) | `source.js.regexp`                 |                                                                     |            |
+| [JavaServer Pages](https://atom.io/packages/language-java)                       | `text.html.jsp`                    |                                                                     |            |
+| [Java](https://atom.io/packages/language-java)                                   | `source.java`                      |                                                                     |            |
+| [JUnit Test Report](https://atom.io/packages/language-java)                      | `text.junit-test-report`           |                                                                     |            |
+| [Makefile](https://atom.io/packages/language-make)                               | `source.makefile`                  |                                                                     |            |
+| [LESS](https://atom.io/packages/language-less)                                   | `source.css.less`                  |                                                                     |            |
+| [SQL (Mustache)](https://atom.io/packages/language-mustache)                     | `source.sql.mustache`              |                                                                     |            |
+| [HTML (Mustache)](https://atom.io/packages/language-mustache)                    | `text.html.mustache`               |                                                                     |            |
+| [Objective-C++](https://atom.io/packages/language-objective-c)                   | `source.objcpp`                    |                                                                     |            |
+| [Strings File](https://atom.io/packages/language-objective-c)                    | `source.strings`                   |                                                                     |            |
+| [Objective-C](https://atom.io/packages/language-objective-c)                     | `source.objc`                      |                                                                     |            |
+| [Property List (XML)](https://atom.io/packages/language-property-list)           | `text.xml.plist`                   |                                                                     |            |
+| [Property List (Old-Style)](https://atom.io/packages/language-property-list)     | `source.plist`                     |                                                                     |            |
+| [Perl](https://atom.io/packages/language-perl)                                   | `source.perl`                      |                                                                     |            |
+| [PHP](https://atom.io/packages/language-php)                                     | `text.html.php`                    |                                                                     |            |
+| PHP                                                                              | `source.php`                       | [atom-hack](https://atom.io/packages/atom-hack)                     | `1.1.0`    |
+| [Python Console](https://atom.io/packages/language-python)                       | `text.python.console`              |                                                                     |            |
+| [Python Traceback](https://atom.io/packages/language-python)                     | `text.python.traceback`            |                                                                     |            |
+| [Regular Expressions (Python)](https://atom.io/packages/language-python)         | `source.regexp.python`             |                                                                     |            |
+| [Python](https://atom.io/packages/language-python)                               | `source.python`                    |                                                                     |            |
+| [Ruby on Rails (RJS)](https://atom.io/packages/language-ruby-on-rails)           | `source.ruby.rails.rjs`            |                                                                     |            |
+| [Ruby](https://atom.io/packages/language-ruby)                                   | `source.ruby`                      |                                                                     |            |
+| [HTML (Ruby - ERB)](https://atom.io/packages/language-ruby)                      | `text.html.erb`                    |                                                                     |            |
+| [HTML (Rails)](https://atom.io/packages/language-ruby-on-rails)                  | `text.html.ruby`                   |                                                                     |            |
+| [SQL (Rails)](https://atom.io/packages/language-ruby-on-rails)                   | `source.sql.ruby`                  |                                                                     |            |
+| [JavaScript (Rails)](https://atom.io/packages/language-ruby-on-rails)            | `source.js.rails source.js.jquery` |                                                                     |            |
+| [Ruby on Rails](https://atom.io/packages/language-ruby-on-rails)                 | `source.ruby.rails`                |                                                                     |            |
+| [Sass](https://atom.io/packages/language-sass)                                   | `source.sass`                      |                                                                     |            |
+| [Plain Text](https://atom.io/packages/language-text)                             | `text.plain`                       |                                                                     |            |
+| [SCSS](https://atom.io/packages/language-sass)                                   | `source.css.scss`                  |                                                                     |            |
+| [SQL](https://atom.io/packages/language-sql)                                     | `source.sql`                       |                                                                     |            |
+| [TOML](https://atom.io/packages/language-toml)                                   | `source.toml`                      |                                                                     |            |
+| [XSL](https://atom.io/packages/language-xml)                                     | `text.xml.xsl`                     |                                                                     |            |
+| [XML](https://atom.io/packages/language-xml)                                     | `text.xml`                         |                                                                     |            |
+| [YAML](https://atom.io/packages/language-yaml)                                   | `source.yaml`                      |                                                                     |            |
 
 ## Providers For Third-Party Grammars
 
-| Grammar                                                   | Scope             | Provider                                                                | ID                               | API Status            |
-|:----------------------------------------------------------|:------------------|:------------------------------------------------------------------------|:---------------------------------|:----------------------|
-| [Apex](https://atom.io/packages/mavensmate-atom)          | `source.apex`     | [mavensmate-atom](https://atom.io/packages/mavensmate-atom)             | `mavensmate-apexprovider`        | `1.0.0`               |
-| [AsciiDoc](https://atom.io/packages/language-asciidoc)    | `source.asciidoc` | [asciidoc-preview](https://atom.io/packages/asciidoc-preview)           | &nbsp;                           | `Uses Deprecated API` |
-| [C#](https://atom.io/packages/language-csharp)            | `source.cs`       | [omnisharp-atom](https://atom.io/packages/omnisharp-atom)               |                                  | `1.0.0`               |
-| [GLSL](https://atom.io/packages/language-glsl)            | `source.glsl`     | [autocomplete-glsl](https://atom.io/packages/autocomplete-glsl)         | `autocomplete-glsl-glslprovider` | `2.0.0`               |
-| [Haskell](https://atom.io/packages/language-haskell)      | `source.haskell`  | [autocomplete-haskell](https://atom.io/packages/autocomplete-haskell)   |                                  | `1.0.0`               |
-| [Rust](https://atom.io/packages/language-rust)             | `source.rust`     | [racer](https://atom.io/packages/racer)                                 | `racer-racerprovider`            | `1.0.0`               |
-| [Typescript](https://atom.io/packages/atom-typescript) | `source.ts`       | [atom-typescript](https://atom.io/packages/atom-typescript)             |                                  | `2.0.0`               |
-| [Typescript](https://atom.io/packages/language-typescript) | `source.ts`       | [atom-typescript-tools](https://atom.io/packages/atom-typescript-tools) |                                  | `1.0.0`               |
-| [Visualforce](https://atom.io/packages/mavensmate-atom)   | `visualforce`     | [mavensmate-atom](https://atom.io/packages/mavensmate-atom)             | `mavensmate-vfprovider`          | `1.0.0`               |
+| Grammar                                                    | Selector          | Provider                                                                | API Status            |
+|:-----------------------------------------------------------|:------------------|:------------------------------------------------------------------------|:----------------------|
+| [Apex](https://atom.io/packages/mavensmate-atom)           | `source.apex`     | [mavensmate-atom](https://atom.io/packages/mavensmate-atom)             | `1.0.0`               |
+| [AsciiDoc](https://atom.io/packages/language-asciidoc)     | `source.asciidoc` | [asciidoc-preview](https://atom.io/packages/asciidoc-preview)           | `Uses Deprecated API` |
+| [C#](https://atom.io/packages/language-csharp)             | `source.cs`       | [omnisharp-atom](https://atom.io/packages/omnisharp-atom)               | `1.0.0`               |
+| [GLSL](https://atom.io/packages/language-glsl)             | `source.glsl`     | [autocomplete-glsl](https://atom.io/packages/autocomplete-glsl)         | `2.0.0`               |
+| [Haskell](https://atom.io/packages/language-haskell)       | `source.haskell`  | [autocomplete-haskell](https://atom.io/packages/autocomplete-haskell)   | `1.0.0`               |
+| [Rust](https://atom.io/packages/language-rust)             | `source.rust`     | [racer](https://atom.io/packages/racer)                                 | `1.0.0`               |
+| [Typescript](https://atom.io/packages/atom-typescript)     | `source.ts`       | [atom-typescript](https://atom.io/packages/atom-typescript)             | `2.0.0`               |
+| [Typescript](https://atom.io/packages/language-typescript) | `source.ts`       | [atom-typescript-tools](https://atom.io/packages/atom-typescript-tools) | `1.0.0`               |
+| [Visualforce](https://atom.io/packages/mavensmate-atom)    | `visualforce`     | [mavensmate-atom](https://atom.io/packages/mavensmate-atom)             | `1.1.0`               |
 
 ## Providers Not Tied To A Specific Grammar
 
-| Scope                                                                                   | Provider                                                                  | ID                                      | Status                |
-|:----------------------------------------------------------------------------------------|:--------------------------------------------------------------------------|:----------------------------------------|:----------------------|
-| `*`                                                                                     | [autocomplete-snippets](https://atom.io/packages/autocomplete-snippets)   | `autocomplete-snippets-snippetprovider` | `1.0.0`               |
-| `*`                                                                                     | [autocomplete-paths](https://atom.io/packages/autocomplete-paths)         | `autocomplete-paths-pathsprovider`      | `1.0.0`               |
-| `*`                                                                                     | [atom-ctags](https://atom.io/packages/atom-ctags)                         | `autocomplete-ctags-ctagssprovider`       | `1.0.0` |
-| `.source.css`, `.source.css.less`, `.source.sass`, `.source.css.scss`, `.source.stylus` | [project-palette-finder](https://atom.io/packages/project-palette-finder) | `project-palette-provider`              | `1.0.0`               |
-| `*` | [you-complete-me](https://atom.io/packages/you-complete-me) | | `2.0.0` |
+| Selector                                                                                | Provider                                                                  | Status  |
+|:----------------------------------------------------------------------------------------|:--------------------------------------------------------------------------|:--------|
+| `*`                                                                                     | [autocomplete-snippets](https://atom.io/packages/autocomplete-snippets)   | `2.0.0` |
+| `*`                                                                                     | [autocomplete-paths](https://atom.io/packages/autocomplete-paths)         | `1.0.0` |
+| `*`                                                                                     | [atom-ctags](https://atom.io/packages/atom-ctags)                         | `1.0.0` |
+| `.source.css`, `.source.css.less`, `.source.sass`, `.source.css.scss`, `.source.stylus` | [project-palette-finder](https://atom.io/packages/project-palette-finder) | `1.1.0` |
+| `*`                                                                                     | [you-complete-me](https://atom.io/packages/you-complete-me)               | `2.0.0` |
+
 --
 
 ## Providers Requested By The Community
