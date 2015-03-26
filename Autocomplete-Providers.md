@@ -74,6 +74,8 @@
 | [Apex](https://atom.io/packages/mavensmate-atom)           | `.source.apex`     | [mavensmate-atom](https://atom.io/packages/mavensmate-atom)             | `1.0.0`               |
 | [AsciiDoc](https://atom.io/packages/language-asciidoc)     | `.source.asciidoc` | [asciidoc-preview](https://atom.io/packages/asciidoc-preview)           | `Uses Deprecated API` |
 | [C#](https://atom.io/packages/language-csharp)             | `.source.cs`       | [omnisharp-atom](https://atom.io/packages/omnisharp-atom)               | `1.0.0`               |
+| [Elixir](https://atom.io/packages/language-elixir)         | `.source.elixir`   | [autocomplete-elixir](https://atom.io/packages/autocomplete-elixir)               | `0.1.0`               |
+| [Erlang](https://atom.io/packages/language-erlang)         | `.source.erlang`   | [autocomplete-erlang](https://atom.io/packages/autocomplete-erlang)               | `0.1.3`               |
 | [GLSL](https://atom.io/packages/language-glsl)             | `.source.glsl`     | [autocomplete-glsl](https://atom.io/packages/autocomplete-glsl)         | `2.0.0`               |
 | [Haskell](https://atom.io/packages/language-haskell)       | `.source.haskell`  | [autocomplete-haskell](https://atom.io/packages/autocomplete-haskell)   | `1.0.0`               |
 | [Haskell](https://atom.io/packages/language-haskell)       | `.source.haskell`  | [ide-haskell](https://atom.io/packages/ide-haskell)                     | `1.0.0`               |
