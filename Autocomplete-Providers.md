@@ -50,7 +50,7 @@
 | [Python Console](https://atom.io/packages/language-python)                       | `.text.python.console`               |                                                                     |            |
 | [Python Traceback](https://atom.io/packages/language-python)                     | `.text.python.traceback`             |                                                                     |            |
 | [Regular Expressions (Python)](https://atom.io/packages/language-python)         | `.source.regexp.python`              |                                                                     |            |
-| [Python](https://atom.io/packages/language-python)                               | `.source.python`                     |                                                                     |            |
+| [Python](https://atom.io/packages/language-python)                               | `.source.python`                     | [autocomplete-plus-python-jedi](https://atom.io/packages/autocomplete-plus-python-jedi)                                                                    |            |
 | [Ruby on Rails (RJS)](https://atom.io/packages/language-ruby-on-rails)           | `.source.ruby.rails.rjs`             |                                                                     |            |
 | [Ruby](https://atom.io/packages/language-ruby)                                   | `.source.ruby`                       |                                                                     |            |
 | [HTML (Ruby - ERB)](https://atom.io/packages/language-ruby)                      | `.text.html.erb`                     |                                                                     |            |
