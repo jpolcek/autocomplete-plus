@@ -80,6 +80,8 @@ provider =
         rightLabel: '' # (optional)
         rightLabelHTML: '' # (optional)
         type: 'function' # (optional)
+        leftLabel: '' # (optional)
+        iconHTML: '' # (optional)
       resolve([suggestion])
 ```
 
