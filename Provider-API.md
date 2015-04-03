@@ -91,6 +91,9 @@ Your suggestions should be returned from `getSuggestions` as an array of objects
 * `rightLabel` (optional): An indicator (e.g. `function`, `variable`) denoting the "kind" of suggestion this represents
 * `rightLabelHTML` (optional): Use this instead of `rightLabel` if you want to use html for the right label.
 * `className` (optional): Class name for the suggestion in the suggestion list. Allows you to style your suggestion via CSS, if desired
+* `leftLabel` (optional): This is shown before the suggestion. Useful for stuff like function return values. [screenshot](https://github.com/atom-community/autocomplete-plus/pull/334)
+* `type` (optional): This is converted into an icon shown against the suggestion. [screenshot](https://github.com/atom-community/autocomplete-plus/pull/334)
+* `iconHTML` (optional): If you want complete control over the icon shown against the suggestion. e.g. ` iconHTML: '<i class="icon-move-right"></i>'` [screenshot](https://github.com/atom-community/autocomplete-plus/pull/334)
 
 ## Registering Your Provider With `autocomplete+`
 
