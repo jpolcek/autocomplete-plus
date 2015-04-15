@@ -83,6 +83,8 @@ provider =
         rightLabel: '' # (optional)
         rightLabelHTML: '' # (optional)
         iconHTML: '' # (optional)
+        description: '' # (optional)
+        descriptionMoreURL: '' # (optional)
       resolve([suggestion])
 ```
 
@@ -98,6 +100,9 @@ Your suggestions should be returned from `getSuggestions` as an array of objects
 * `rightLabelHTML` (optional): Use this instead of `rightLabel` if you want to use html for the right label.
 * `className` (optional): Class name for the suggestion in the suggestion list. Allows you to style your suggestion via CSS, if desired
 * `iconHTML` (optional): If you want complete control over the icon shown against the suggestion. e.g. ` iconHTML: '<i class="icon-move-right"></i>'` [screenshot](https://github.com/atom-community/autocomplete-plus/pull/334). The background color of the icon will still be determined (by default) from the `type`.
+* `description` (optional): A doc-string summary or short description of the suggestion. When specified, it will be displayed at the bottom of the suggestions list.
+* `descriptionMoreURL` (optional): A url to the documentation or more information about this suggestion. When specified, a `More..` link will be displayed in the description area.
+  ![autocomplete-description](https://cloud.githubusercontent.com/assets/69169/7171000/0eeb767e-e388-11e4-854f-547fd955a72e.jpg)
 
 ## Registering Your Provider With `autocomplete+`
 
