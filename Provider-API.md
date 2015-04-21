@@ -76,6 +76,7 @@ provider =
       suggestion =
         text: 'someText' # OR
         snippet: 'someText(${1:myArg})'
+        displayText: 'someText' # (optional)
         replacementPrefix: 'so' # (optional)
         type: 'function' # (optional)
         leftLabel: '' # (optional)
@@ -92,6 +93,7 @@ Your suggestions should be returned from `getSuggestions` as an array of objects
 
 * `text` (required; or `snippet`): The text which will be inserted into the editor, in place of the prefix
 * `snippet` (required; or `text`): A snippet string. This will allow users to tab through function arguments or other options. e.g. `'myFunction(${1:arg1}, ${2:arg2})'`. See the [snippets](https://github.com/atom/snippets) package for more information.
+* `displayText` (optional): A string that will show in the UI for this suggestion. When not set, `snippet || text` is displayed. This is useful when `snippet` or `text` displays too much, and you want to simplify. e.g. `{type: 'attribute', snippet: 'class="$0"$1', displayText: 'class'}`
 * `replacementPrefix` (optional): The text immediately preceding the cursor, which will be replaced by the `text`. If not provided, the prefix passed into `getSuggestions` will be used.
 * `type` (optional): The suggestion type. It will be converted into an icon shown against the suggestion. [screenshot](https://github.com/atom-community/autocomplete-plus/pull/334). Predefined styles exist for `variable`, `constant`, `property`, `value`, `method`, `function`, `class`, `type`, `keyword`, `tag`, `snippet`, `import`, `require`. This list represents nearly everything being colorized.
 * `leftLabel` (optional): This is shown before the suggestion. Useful for return values. [screenshot](https://github.com/atom-community/autocomplete-plus/pull/334)
