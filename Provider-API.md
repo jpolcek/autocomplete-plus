@@ -83,6 +83,7 @@ provider =
         leftLabelHTML: '' # (optional)
         rightLabel: '' # (optional)
         rightLabelHTML: '' # (optional)
+        className: '' # (optional)
         iconHTML: '' # (optional)
         description: '' # (optional)
         descriptionMoreURL: '' # (optional)
