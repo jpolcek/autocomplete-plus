@@ -9,8 +9,8 @@ Each language can tune how the `SymbolProvider` tags symbols by modifying the [c
 ```coffee
 # An example for the CoffeeScript language
 '.source.coffee':
-  editor:
-    completions:
+  autocomplete:
+    symbols:
       class:
         selector: '.class.name, .inherited-class, .instance.type'
         typePriority: 4
@@ -35,8 +35,8 @@ A more generic example:
 ```coffee
 
 '.source.language':
-  editor:
-    completions:
+  autocomplete:
+    symbols:
       typename1:
         selector: '.some, .selectors'
         typePriority: 1
@@ -79,7 +79,7 @@ Typename objects support the following properties:
 
 ## Finding Scope Selectors
 
-Coming up with the selectors for a given Typename object might be the hardest part of defining the `completions` config. Fortunately there is a tool to help
+Coming up with the selectors for a given Typename object might be the hardest part of defining the `autocomplete.symbols` config. Fortunately there is a tool to help
 
 Open the [command palette](https://atom.io/docs/latest/getting-started-atom-basics#command-palette), then search for `log cursor scope`. You will be presented with a blue box like the following:
 
