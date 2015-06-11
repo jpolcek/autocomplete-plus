@@ -86,6 +86,7 @@
 | [Typescript](https://atom.io/packages/atom-typescript)     | `.source.ts`       | [atom-typescript](https://atom.io/packages/atom-typescript)             | `2.0.0`               |
 | [Typescript](https://atom.io/packages/language-typescript) | `.source.ts`       | [atom-typescript-tools](https://atom.io/packages/atom-typescript-tools) | `1.0.0`               |
 | [Visualforce](https://atom.io/packages/mavensmate-atom)    | `.visualforce`     | [mavensmate-atom](https://atom.io/packages/mavensmate-atom)             | `1.1.0`               |
+| [Pig](https://atom.io/packages/pig)    | `.source.pig`     | [pig](https://atom.io/packages/pig)             | `2.0.0`               |
 
 ## Providers Not Tied To A Specific Grammar
 
