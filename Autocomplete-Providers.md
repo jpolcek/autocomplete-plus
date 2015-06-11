@@ -46,7 +46,7 @@
 | [Property List (Old-Style)](https://atom.io/packages/language-property-list)     | `.source.plist`                      |                                                                     |            |
 | [Perl](https://atom.io/packages/language-perl)                                   | `.source.perl`                       |                                                                     |            |
 | [PHP](https://atom.io/packages/language-php)                                     | `.text.html.php`                     |                                                                     |            |
-| PHP                                                                              | `.source.php`                        | [autocomplete-hack](https://atom.io/packages/autocomplete-hack)                     | `2.0.0`    |
+| PHP                                                                              | `.source.php`                        | [autocomplete-hack](https://atom.io/packages/autocomplete-hack), [atom-autocomplete-php](https://github.com/Peekmo/atom-autocomplete-php)                     | `2.0.0`    |
 | [Python Console](https://atom.io/packages/language-python)                       | `.text.python.console`               |                                                                     |            |
 | [Python Traceback](https://atom.io/packages/language-python)                     | `.text.python.traceback`             |                                                                     |            |
 | [Regular Expressions (Python)](https://atom.io/packages/language-python)         | `.source.regexp.python`              |                                                                     |            |
@@ -110,7 +110,6 @@ If you'd like to contribute and are interested in learning how to write an `auto
 
 ## Packages That Claim Autocomplete, But Are Not API 1.0.0 Compatible
 
-* https://github.com/Peekmo/atom-autocomplete-php (never published, unknown state)
 * https://github.com/kbrownlees/autocomplete-python-jedi (never published, unknown state)
 * https://github.com/maun/atom-rust-plus (never published, uses [autocomplete-plus-async](https://atom.io/packages/autocomplete-plus-async))
 * https://atom.io/packages/ios (doesn't make use of autocomplete-plus)
