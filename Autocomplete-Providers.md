@@ -2,8 +2,8 @@
 
 | Grammar | Selector | Provider         | Status                               |
 |:--------|:---------|:-----------------|:-------------------------------------|
+| All     | `*`      | `SymbolProvider` | `Default Provider`                   |
 | All     | `*`      | `FuzzyProvider`  | `Deprecated`                         |
-| All     | `*`      | `SymbolProvider` | `WIP` (Will Replace `FuzzyProvider`) |
 
 ## Providers For Built-In Grammars
 
