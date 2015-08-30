@@ -50,7 +50,7 @@
 | [Python Console](https://atom.io/packages/language-python)                       | `.text.python.console`               |                                                                     |            |
 | [Python Traceback](https://atom.io/packages/language-python)                     | `.text.python.traceback`             |                                                                     |            |
 | [Regular Expressions (Python)](https://atom.io/packages/language-python)         | `.source.regexp.python`              |                                                                     |            |
-| [Python](https://atom.io/packages/language-python)                               | `.source.python`                     | [autocomplete-plus-python-jedi](https://atom.io/packages/autocomplete-plus-python-jedi), [autocomplete-python](https://atom.io/packages/autocomplete-python)                                                                    |            |
+| [Python](https://atom.io/packages/language-python)                               | `.source.python`                     | [autocomplete-python](https://atom.io/packages/autocomplete-python)                                                                    |            |
 | [Ruby on Rails (RJS)](https://atom.io/packages/language-ruby-on-rails)           | `.source.ruby.rails.rjs`             |                                                                     |            |
 | [Ruby](https://atom.io/packages/language-ruby)                                   | `.source.ruby`                       |                                                                     |            |
 | [HTML (Ruby - ERB)](https://atom.io/packages/language-ruby)                      | `.text.html.erb`                     |                                                                     |            |
@@ -122,6 +122,7 @@ If you'd like to contribute and are interested in learning how to write an `auto
 If you are using one of these providers, please uninstall the package as it is no longer maintained.
 
 * https://github.com/vito/atom-autocomplete-gocode (deprecated, use [go-plus](https://atom.io/packages/go-plus) instead)
+* https://github.com/tinloaf/autocomplete-plus-python-jedi (deprecated, use [autocomplete-python](https://atom.io/packages/autocomplete-python) instead)
 
 ## Other Forks Of Autocomplete
 
