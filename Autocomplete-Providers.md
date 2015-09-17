@@ -73,7 +73,7 @@
 |:-----------------------------------------------------------|:-------------------|:------------------------------------------------------------------------|:----------------------|
 | [Apex](https://atom.io/packages/mavensmate-atom)           | `.source.apex`     | [mavensmate-atom](https://atom.io/packages/mavensmate-atom)             | `1.0.0`               |
 | [AsciiDoc](https://atom.io/packages/language-asciidoc)     | `.source.asciidoc` | [asciidoc-preview](https://atom.io/packages/asciidoc-preview)           | `Uses Deprecated API` |
-| [C#](https://atom.io/packages/language-csharp)             | `.source.cs`       | [omnisharp-atom](https://atom.io/packages/omnisharp-atom)               | `1.0.0`               |
+| [C#](https://atom.io/packages/language-csharp)             | `.source.cs`       | [omnisharp-atom](https://atom.io/packages/omnisharp-atom)               | `2.0.0`               |
 | [Dart](https://github.com/radicaled/dart-tools)            | `.source.dart`     | [dart-tools](https://github.com/radicaled/dart-tools)                   |
 | [Elixir](https://atom.io/packages/language-elixir)         | `.source.elixir`   | [autocomplete-elixir](https://atom.io/packages/autocomplete-elixir)     | `2.0.0`               |
 | [Erlang](https://atom.io/packages/language-erlang)         | `.source.erlang`   | [autocomplete-erlang](https://atom.io/packages/autocomplete-erlang)     | `2.0.0`               |
