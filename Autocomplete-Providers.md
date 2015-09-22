@@ -17,8 +17,8 @@
 | [Shell Script](https://atom.io/packages/language-shellscript)                    | `.source.shell`                      |                                                                     |            |
 | [Hyperlink](https://atom.io/packages/language-hyperlink)                         | `.text.hyperlink`                    |                                                                     |            |
 | [TODO](https://atom.io/packages/language-todo)                                   | `.text.todo`                         |                                                                     |            |
-| [C](https://atom.io/packages/language-c)                                         | `.source.c`                          |                                                                     |            |
-| [C++](https://atom.io/packages/language-c)                                       | `.source.cpp`                        | [autocomplete-hack](https://atom.io/packages/autocomplete-hack)                     | `2.0.0`    |
+| [C](https://atom.io/packages/language-c)                                         | `.source.c`                          | [autocomplete-clang](https://atom.io/packages/autocomplete-clang) |
+| [C++](https://atom.io/packages/language-c)                                       | `.source.cpp`                        | [autocomplete-clang](https://atom.io/packages/autocomplete-clang), [autocomplete-hack](https://atom.io/packages/autocomplete-hack)                     | `2.0.0`    |
 | [Clojure](https://atom.io/packages/language-clojure)                             | `.source.clojure`                    |                                                                     |            |
 | [CSS](https://atom.io/packages/language-css)                                     | `.source.css`                        | [autocomplete-css](https://atom.io/packages/autocomplete-css)       | `2.0.0`    |
 | [GitHub Markdown](https://atom.io/packages/language-gfm)                         | `.source.gfm`                        | [autocomplete-bibtex](https://atom.io/packages/autocomplete-bibtex) | `1.1.0`    |
@@ -39,9 +39,9 @@
 | [LESS](https://atom.io/packages/language-less)                                   | `.source.css.less`                   |                                                                     |            |
 | [SQL (Mustache)](https://atom.io/packages/language-mustache)                     | `.source.sql.mustache`               |                                                                     |            |
 | [HTML (Mustache)](https://atom.io/packages/language-mustache)                    | `.text.html.mustache`                |                                                                     |            |
-| [Objective-C++](https://atom.io/packages/language-objective-c)                   | `.source.objcpp`                     |                                                                     |            |
+| [Objective-C++](https://atom.io/packages/language-objective-c)                   | `.source.objcpp`                     | [autocomplete-clang](https://atom.io/packages/autocomplete-clang)                                                                    |            |
 | [Strings File](https://atom.io/packages/language-objective-c)                    | `.source.strings`                    |                                                                     |            |
-| [Objective-C](https://atom.io/packages/language-objective-c)                     | `.source.objc`                       |                                                                     |            |
+| [Objective-C](https://atom.io/packages/language-objective-c)                     | `.source.objc`                       | [autocomplete-clang](https://atom.io/packages/autocomplete-clang)                                                                    |            |
 | [Property List (XML)](https://atom.io/packages/language-property-list)           | `.text.xml.plist`                    |                                                                     |            |
 | [Property List (Old-Style)](https://atom.io/packages/language-property-list)     | `.source.plist`                      |                                                                     |            |
 | [Perl](https://atom.io/packages/language-perl)                                   | `.source.perl`                       |                                                                     |            |
@@ -127,7 +127,6 @@ If you are using one of these providers, please uninstall the package as it is n
 
 ## Other Forks Of Autocomplete
 
-* https://atom.io/packages/autocomplete-clang (fork of `autocomplete`)
 * https://github.com/xumingthepoet/autocomplete-plus-elixir (never published)
 * https://atom.io/packages/autocomplete-jedi (fork of `autocomplete`)
 * https://atom.io/packages/rubymotion (extends default autocomplete package)
