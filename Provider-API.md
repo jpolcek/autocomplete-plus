@@ -33,7 +33,7 @@ provider =
 The properties of a provider:
 
 * `selector` (required): Defines the scope selector(s) (can be comma-separated) for which your provider should receive suggestion requests
-* `getSuggestions` (required): Is called when a suggestion request has been dispatched by `autocomplete+` to your provider. Return an array of suggestions (if any) in the order you would like them displayed to the user. Returning a promise
+* `getSuggestions` (required): Is called when a suggestion request has been dispatched by `autocomplete+` to your provider. Return an array of suggestions (if any) in the order you would like them displayed to the user. Returning a Promise of an array of suggestions is also supported.
 * `disableForSelector` (optional): Defines the scope selector(s) (can be comma-separated) for which your provider should not be used
 * `inclusionPriority` (optional): A number to indicate its priority to be included in a suggestions request. The default provider has an inclusion priority of `0`. Higher priority providers can suppress lower priority providers with `excludeLowerPriority`.
 * `excludeLowerPriority` (optional): Will not use lower priority providers when this provider is used.
