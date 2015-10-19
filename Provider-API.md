@@ -17,7 +17,7 @@ provider =
   excludeLowerPriority: true
 
   # Required: Return a promise, an array of suggestions, or null.
-  getSuggestions: ({editor, bufferPosition, scopeDescriptor, prefix}) ->
+  getSuggestions: ({editor, bufferPosition, scopeDescriptor, prefix, activatedManually}) ->
     new Promise (resolve) ->
       resolve([text: 'something'])
 
@@ -62,6 +62,7 @@ An `options` object will be passed to your `getSuggestions` function, with the f
 * `bufferPosition`: The position of the cursor
 * `scopeDescriptor`: The [scope descriptor](https://atom.io/docs/latest/behind-atom-scoped-settings-scopes-and-scope-descriptors#scope-descriptors) for the current cursor position
 * `prefix`: The prefix for the word immediately preceding the current cursor position
+* `activatedManually`: Whether the autocomplete request was initiated by the user (e.g. with ctrl+space)
 
 ## Suggestions
 
