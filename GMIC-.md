@@ -1,0 +1,32 @@
+<DOCTYPEhtml>
+<html>
+<body>
+<form id="app-login:"
+action=*process.php>
+ <fieldset>
+  <legend>LoginDetails:</legend>
+  <div>
+   <label-for="user-
+name">UserName:</label>
+   <inputName:="user-name"
+type="email"placeholder="your
+username-is-your-email-address"
+required-autofocus>
+    </div>
+    <div>
+     <lablel
+for="password:">Password:</label>
+     <input-name:="password:"
+type="password"placeholder="6
+digits,a-combination-of-numbers-and-
+letters"required>
+      </div>
+      <div>
+       <inputName:="Login:"
+type="submit"Value=Login:">
+      </div>
+     </fieldset>
+</form>
+
+</body>
+</html>
