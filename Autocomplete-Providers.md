@@ -64,7 +64,7 @@
 | [SQL](https://atom.io/packages/language-sql)                                     | `.source.sql`                        |                                                                     |            |
 | [TOML](https://atom.io/packages/language-toml)                                   | `.source.toml`                       |                                                                     |            |
 | [XSL](https://atom.io/packages/language-xml)                                     | `.text.xml.xsl`                      |                                                                     |            |
-| [XML](https://atom.io/packages/language-xml)                                     | `.text.xml`                          |                                                                     |            |
+| [XML](https://atom.io/packages/language-xml)                                     | `.text.xml`                          | [autocomplete-xml](https://github.com/pleonex/atom-autocomplete-xml)           | `2.0.0`    |
 | [YAML](https://atom.io/packages/language-yaml)                                   | `.source.yaml`                       |                                                                     |            |
 
 ## Providers For Third-Party Grammars
