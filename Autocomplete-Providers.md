@@ -26,7 +26,7 @@
 | [Git Commit Message](https://atom.io/packages/language-git)                      | `.text.git-commit`                   |                                                                     |            |
 | [Git Rebase Message](https://atom.io/packages/language-git)                      | `.text.git-rebase`                   |                                                                     |            |
 | [HTML (Go)](https://atom.io/packages/language-go)                                | `.text.html.gohtml`                  |                                                                     |            |
-| [Go](https://atom.io/packages/language-go)                                       | `.source.go`                         | [go-plus](https://atom.io/packages/go-plus)                         | `2.0.0`    |
+| [Go](https://atom.io/packages/language-go)                                       | `.source.go`                         | [go-plus](https://atom.io/packages/go-plus), [autocomplete-go](https://atom.io/packages/autocomplete-go)                         | `2.0.0`    |
 | [Go Template](https://atom.io/packages/language-go)                              | `.source.gotemplate`                 |                                                                     |            |
 | [HTML](https://atom.io/packages/language-html)                                   | `.text.html.basic`                   | [autocomplete-html](https://atom.io/packages/autocomplete-html)     | `2.0.0`    |
 | [JavaScript](https://atom.io/packages/language-javascript)                       | `.source.js`                         | [atom-ternjs](https://atom.io/packages/atom-ternjs)                 | `2.0.0`    |
