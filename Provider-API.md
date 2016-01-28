@@ -108,8 +108,6 @@ Your suggestions should be returned from `getSuggestions` as an array of objects
 * `descriptionMoreURL` (optional): A url to the documentation or more information about this suggestion. When specified, a `More..` link will be displayed in the description area.
   ![autocomplete-description](https://cloud.githubusercontent.com/assets/69169/7171000/0eeb767e-e388-11e4-854f-547fd955a72e.jpg)
 
-[shawn@w3c.org](http://www.w3.org/WAI/participation) has been asked (19th Nov 2015, 8:35pm UTC) if W3C can provide their standards, e.g. SVG, in a data format that text editors can use to do this, so we don't have to type them out manually. 
-
 ## Registering Your Provider With `autocomplete+`
 
 ### API 2.0.0
