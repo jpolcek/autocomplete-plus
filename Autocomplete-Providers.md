@@ -74,7 +74,7 @@
 | [Apex](https://atom.io/packages/mavensmate-atom)           | `.source.apex`     | [mavensmate-atom](https://atom.io/packages/mavensmate-atom)             | `1.0.0`               |
 | [AsciiDoc](https://atom.io/packages/language-asciidoc)     | `.source.asciidoc` | [asciidoc-preview](https://atom.io/packages/asciidoc-preview)           | `Uses Deprecated API` |
 | [C#](https://atom.io/packages/language-csharp)             | `.source.cs`       | [omnisharp-atom](https://atom.io/packages/omnisharp-atom)               | `2.0.0`               |
-| [ComputerCraft](https://atom.io/packages/language-computercraft)                 | `.source.computercraft`                     |                                                                     |            |
+| [ComputerCraft](https://atom.io/packages/language-computercraft)      | `.source.computercraft`                     | [autocomplete-computercraft](https://atom.io/packages/autocomplete-computercraft)   |  `0.1.1`          |
 | [Dart](https://github.com/radicaled/dart-tools)            | `.source.dart`     | [dart-tools](https://github.com/radicaled/dart-tools)                   |
 | [Dart](https://github.com/dart-atom/dartlang)              | `.source.dart`     | [dartlang](https://github.com/dart-atom/dartlang)                       |
 | [Elixir](https://atom.io/packages/language-elixir)         | `.source.elixir`   | [autocomplete-elixir](https://atom.io/packages/autocomplete-elixir)     | `2.0.0`               |
