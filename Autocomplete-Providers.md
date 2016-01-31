@@ -12,7 +12,6 @@
 | Null Grammar                                                                     | `.text.plain.null-grammar`           | &nbsp;                                                              | &nbsp;     |
 | [CoffeeScript (Literate)](https://atom.io/packages/language-coffee-script)       | `.source.litcoffee`                  |                                                                     |            |
 | [CoffeeScript](https://atom.io/packages/language-coffee-script)                  | `.source.coffee`                     |                                                                     |            |
-| [ComputerCraft](https://atom.io/packages/language-computercraft)                 | `.source.computercraft`                     |                                                                     |            |
 | [JSON](https://atom.io/packages/language-json)                                   | `.source.json`                       |                                                                     |            |
 | [Shell Session](https://atom.io/packages/language-shellscript)                   | `.text.shell-session`                |                                                                     |            |
 | [Shell Script](https://atom.io/packages/language-shellscript)                    | `.source.shell`                      |                                                                     |            |
@@ -75,6 +74,7 @@
 | [Apex](https://atom.io/packages/mavensmate-atom)           | `.source.apex`     | [mavensmate-atom](https://atom.io/packages/mavensmate-atom)             | `1.0.0`               |
 | [AsciiDoc](https://atom.io/packages/language-asciidoc)     | `.source.asciidoc` | [asciidoc-preview](https://atom.io/packages/asciidoc-preview)           | `Uses Deprecated API` |
 | [C#](https://atom.io/packages/language-csharp)             | `.source.cs`       | [omnisharp-atom](https://atom.io/packages/omnisharp-atom)               | `2.0.0`               |
+| [ComputerCraft](https://atom.io/packages/language-computercraft)                 | `.source.computercraft`                     |                                                                     |            |
 | [Dart](https://github.com/radicaled/dart-tools)            | `.source.dart`     | [dart-tools](https://github.com/radicaled/dart-tools)                   |
 | [Dart](https://github.com/dart-atom/dartlang)              | `.source.dart`     | [dartlang](https://github.com/dart-atom/dartlang)                       |
 | [Elixir](https://atom.io/packages/language-elixir)         | `.source.elixir`   | [autocomplete-elixir](https://atom.io/packages/autocomplete-elixir)     | `2.0.0`               |
