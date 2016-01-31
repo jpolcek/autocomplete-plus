@@ -12,6 +12,7 @@
 | Null Grammar                                                                     | `.text.plain.null-grammar`           | &nbsp;                                                              | &nbsp;     |
 | [CoffeeScript (Literate)](https://atom.io/packages/language-coffee-script)       | `.source.litcoffee`                  |                                                                     |            |
 | [CoffeeScript](https://atom.io/packages/language-coffee-script)                  | `.source.coffee`                     |                                                                     |            |
+| [ComputerCraft](https://atom.io/packages/language-computercraft)                 | `.source.computercraft`                     |                                                                     |            |
 | [JSON](https://atom.io/packages/language-json)                                   | `.source.json`                       |                                                                     |            |
 | [Shell Session](https://atom.io/packages/language-shellscript)                   | `.text.shell-session`                |                                                                     |            |
 | [Shell Script](https://atom.io/packages/language-shellscript)                    | `.source.shell`                      |                                                                     |            |
