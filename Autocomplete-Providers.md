@@ -19,7 +19,7 @@
 | [TODO](https://atom.io/packages/language-todo)                                   | `.text.todo`                         |                                                                     |            |
 | [C](https://atom.io/packages/language-c)                                         | `.source.c`                          | [autocomplete-clang](https://atom.io/packages/autocomplete-clang) |
 | [C++](https://atom.io/packages/language-c)                                       | `.source.cpp`                        | [autocomplete-clang](https://atom.io/packages/autocomplete-clang)                     | `2.0.0`    |
-| [Clojure](https://atom.io/packages/language-clojure)                             | `.source.clojure`                    |                                                                     |            |
+| [Clojure](https://atom.io/packages/language-clojure)                             | `.source.clojure`                    | [proto-repl](https://atom.io/packages/proto-repl)                   |            |
 | [CSS](https://atom.io/packages/language-css)                                     | `.source.css`                        | [autocomplete-css](https://atom.io/packages/autocomplete-css)       | `2.0.0`    |
 | [GitHub Markdown](https://atom.io/packages/language-gfm)                         | `.source.gfm`                        | [autocomplete-bibtex](https://atom.io/packages/autocomplete-bibtex) | `1.1.0`    |
 | [Git Config](https://atom.io/packages/language-git)                              | `.source.git-config`                 |                                                                     |            |
