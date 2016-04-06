@@ -85,7 +85,7 @@
 | [Haskell](https://atom.io/packages/language-haskell)       | `.source.haskell`  | [ide-haskell](https://atom.io/packages/ide-haskell)                     | `1.0.0`               |
 | [Haxe](https://atom.io/packages/language-haxe)             | `.source.haxe`     | [autocomplete-haxe](https://atom.io/packages/autocomplete-haxe)         | `1.1.0`               |
 | [Q/K](https://atom.io/packages/language-kdb-q)             | `.source.q`        | [autocomplete-kdb-q](https://atom.io/packages/autocomplete-kdb-q)   | `2.0.0`               |
-| [HTML (Nunjucks)](https://github.com/puranjayjain/atom-language-nunjucks)| `.source.nunjucks, .text.html.nunjucks` | [autocomplete-nunjucks](https://github.com/puranjayjain/autocomplete-nunjucks) | `2.0.0` |
+| [HTML (Nunjucks)](https://github.com/alohaas/language-nunjucks)| `.source.nunjucks, .text.html.nunjucks` | [autocomplete-nunjucks](https://github.com/puranjayjain/autocomplete-nunjucks) | `2.0.0` |
 | [Rust](https://atom.io/packages/language-rust)             | `.source.rust`     | [racer](https://atom.io/packages/racer)                                 | `2.0.0`               |
 | [Typescript](https://atom.io/packages/atom-typescript)     | `.source.ts`       | [atom-typescript](https://atom.io/packages/atom-typescript)             | `2.0.0`               |
 | [Typescript](https://atom.io/packages/language-typescript) | `.source.ts`       | [atom-typescript-tools](https://atom.io/packages/atom-typescript-tools) | `1.0.0`               |
