@@ -33,7 +33,7 @@
 | [Java Properties](https://atom.io/packages/language-java)                        | `.source.java-properties`            |                                                                     |            |
 | [Regular Expressions (JavaScript)](https://atom.io/packages/language-javascript) | `.source.js.regexp`                  |                                                                     |            |
 | [JavaServer Pages](https://atom.io/packages/language-java)                       | `.text.html.jsp`                     |                                                                     |            |
-| [Java](https://atom.io/packages/language-java)                                   | `.source.java`                       |                                                                     |            |
+| [Java](https://atom.io/packages/language-java)                                   | `.source.java`                       | [autocomplete-java-minus](https://atom.io/packages/autocomplete-java-minus) | `2.0.0`       |
 | [JUnit Test Report](https://atom.io/packages/language-java)                      | `.text.junit-test-report`            |                                                                     |            |
 | [Makefile](https://atom.io/packages/language-make)                               | `.source.makefile`                   |                                                                     |            |
 | [LESS](https://atom.io/packages/language-less)                                   | `.source.css.less`                   |                                                                     |            |
