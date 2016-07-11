@@ -84,12 +84,13 @@
 | [Haskell](https://atom.io/packages/language-haskell)       | `.source.haskell`  | [autocomplete-haskell](https://atom.io/packages/autocomplete-haskell)   | `1.0.0`               |
 | [Haskell](https://atom.io/packages/language-haskell)       | `.source.haskell`  | [ide-haskell](https://atom.io/packages/ide-haskell)                     | `1.0.0`               |
 | [Haxe](https://atom.io/packages/language-haxe)             | `.source.haxe`     | [autocomplete-haxe](https://atom.io/packages/autocomplete-haxe)         | `1.1.0`               |
+| [Marko](https://github.com/marko-js/atom-language-marko)| `.text.marko` | [autocomplete-marko](https://github.com/marko-js/atom-autocomplete-marko) | `2.0.0` |
+| [Nunjucks](https://github.com/alohaas/language-nunjucks)| `.source.nunjucks, .text.html.nunjucks` | [autocomplete-nunjucks](https://github.com/puranjayjain/autocomplete-nunjucks) | `2.0.0` |
+| [Pig](https://atom.io/packages/pig)    | `.source.pig`     | [pig](https://atom.io/packages/pig)             | `2.0.0`               |
 | [Q/K](https://atom.io/packages/language-kdb-q)             | `.source.q`        | [autocomplete-kdb-q](https://atom.io/packages/autocomplete-kdb-q)   | `2.0.0`               |
-| [HTML (Nunjucks)](https://github.com/alohaas/language-nunjucks)| `.source.nunjucks, .text.html.nunjucks` | [autocomplete-nunjucks](https://github.com/puranjayjain/autocomplete-nunjucks) | `2.0.0` |
 | [Rust](https://atom.io/packages/language-rust)             | `.source.rust`     | [racer](https://atom.io/packages/racer)                                 | `2.0.0`               |
 | [TypeScript](https://atom.io/packages/atom-typescript)     | `.source.ts`       | [atom-typescript](https://atom.io/packages/atom-typescript)             | `8.11.0`               |
 | [Visualforce](https://atom.io/packages/mavensmate-atom)    | `.visualforce`     | [mavensmate-atom](https://atom.io/packages/mavensmate-atom)             | `1.1.0`               |
-| [Pig](https://atom.io/packages/pig)    | `.source.pig`     | [pig](https://atom.io/packages/pig)             | `2.0.0`               |
 
 ## Providers Not Tied To A Specific Grammar
 
