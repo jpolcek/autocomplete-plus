@@ -10,11 +10,14 @@ provider =
   selector: '.source.js, .source.coffee'
   disableForSelector: '.source.js .comment'
 
-  # This will take priority over the default provider, which has a priority of 0.
+  # This will take priority over the default provider, which has a inclusionPriority of 0.
   # `excludeLowerPriority` will suppress any providers with a lower priority
   # i.e. The default provider will be suppressed
   inclusionPriority: 1
   excludeLowerPriority: true
+
+  # This will be suggested before the default provider, which has a suggestionPriority of 1.
+  suggestionPriority: 2
 
   # Required: Return a promise, an array of suggestions, or null.
   getSuggestions: ({editor, bufferPosition, scopeDescriptor, prefix, activatedManually}) ->
@@ -37,6 +40,7 @@ The properties of a provider:
 * `disableForSelector` (optional): Defines the scope selector(s) (can be comma-separated) for which your provider should not be used
 * `inclusionPriority` (optional): A number to indicate its priority to be included in a suggestions request. The default provider has an inclusion priority of `0`. Higher priority providers can suppress lower priority providers with `excludeLowerPriority`.
 * `excludeLowerPriority` (optional): Will not use lower priority providers when this provider is used.
+* `suggestionPriority` (optional): A number to determine the sort order of suggestions. The default provider has an suggestion priority of `1`
 * `dispose` (optional): Will be called if your provider is being destroyed by `autocomplete+`
 * `onDidInsertSuggestion` (optional): Function that is called when a suggestion from your provider was inserted into the buffer
   * `editor`: the [TextEditor](https://atom.io/docs/api/latest/TextEditor) your suggestion was inserted in
