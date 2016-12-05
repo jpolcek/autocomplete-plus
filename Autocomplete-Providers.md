@@ -104,7 +104,7 @@
 | `.source.js, .source.jsx, .source.coffee`                                                               | [autocomplete-underdash](https://atom.io/packages/autocomplete-underdash)                             | `2.0.0` |
 | `.source.css`, `.source.css.less`, `.source.sass`, `.source.css.scss`, `.source.stylus` | [project-palette-finder](https://atom.io/packages/project-palette-finder) | `1.1.0` |
 | `*`                                                                                     | [you-complete-me](https://atom.io/packages/you-complete-me)               | `2.0.0` |
-| `*`                                                                                     | [autocomplete-en-en](https://atom.io/packages/autocomplete-en-en)               | `2.0.0` |
+| `English word autocompetion with the hint of explanation.`                                                                                     | [autocomplete-en-en](https://atom.io/packages/autocomplete-en-en)               | `2.0.0` |
 
 --
 
