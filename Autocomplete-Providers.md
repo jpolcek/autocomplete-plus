@@ -17,8 +17,8 @@
 | [Shell Script](https://atom.io/packages/language-shellscript)                    | `.source.shell`                      |                                                                     |            |
 | [Hyperlink](https://atom.io/packages/language-hyperlink)                         | `.text.hyperlink`                    |                                                                     |            |
 | [TODO](https://atom.io/packages/language-todo)                                   | `.text.todo`                         |                                                                     |            |
-| [C](https://atom.io/packages/language-c)                                         | `.source.c`                          | [autocomplete-clang](https://atom.io/packages/autocomplete-clang) |
-| [C++](https://atom.io/packages/language-c)                                       | `.source.cpp`                        | [autocomplete-clang](https://atom.io/packages/autocomplete-clang)                     | `2.0.0`    |
+| [C](https://atom.io/packages/language-c)                                         | `.source.c`                          | [autocomplete-clang](https://atom.io/packages/autocomplete-clang)   |
+| [C++](https://atom.io/packages/language-c)                                       | `.source.cpp`                        | [autocomplete-clang](https://atom.io/packages/autocomplete-clang)   | `2.0.0`    |
 | [Clojure](https://atom.io/packages/language-clojure)                             | `.source.clojure`                    | [proto-repl](https://atom.io/packages/proto-repl)                   |            |
 | [CSS](https://atom.io/packages/language-css)                                     | `.source.css`                        | [autocomplete-css](https://atom.io/packages/autocomplete-css)       | `2.0.0`    |
 | [GitHub Markdown](https://atom.io/packages/language-gfm)                         | `.source.gfm`                        | [autocomplete-bibtex](https://atom.io/packages/autocomplete-bibtex) | `1.1.0`    |
@@ -26,31 +26,31 @@
 | [Git Commit Message](https://atom.io/packages/language-git)                      | `.text.git-commit`                   |                                                                     |            |
 | [Git Rebase Message](https://atom.io/packages/language-git)                      | `.text.git-rebase`                   |                                                                     |            |
 | [HTML (Go)](https://atom.io/packages/language-go)                                | `.text.html.gohtml`                  |                                                                     |            |
-| [Go](https://atom.io/packages/language-go)                                       | `.source.go`                         | [go-plus](https://atom.io/packages/go-plus), [autocomplete-go](https://atom.io/packages/autocomplete-go)                         | `2.0.0`    |
+| [Go](https://atom.io/packages/language-go)                                       | `.source.go`                         | [go-plus](https://atom.io/packages/go-plus), [autocomplete-go](https://atom.io/packages/autocomplete-go) | `2.0.0` |
 | [Go Template](https://atom.io/packages/language-go)                              | `.source.gotemplate`                 |                                                                     |            |
 | [HTML](https://atom.io/packages/language-html)                                   | `.text.html.basic`                   | [autocomplete-html](https://atom.io/packages/autocomplete-html)     | `2.0.0`    |
 | [JavaScript](https://atom.io/packages/language-javascript)                       | `.source.js`                         | [atom-ternjs](https://atom.io/packages/atom-ternjs)                 | `2.0.0`    |
 | [Java Properties](https://atom.io/packages/language-java)                        | `.source.java-properties`            |                                                                     |            |
 | [Regular Expressions (JavaScript)](https://atom.io/packages/language-javascript) | `.source.js.regexp`                  |                                                                     |            |
-| [JavaServer Pages](https://atom.io/packages/language-java)                       | `.text.html.jsp`                     |                                                                     |            |
-| [Java](https://atom.io/packages/language-java)                                   | `.source.java`                       | [autocomplete-java-minus](https://atom.io/packages/autocomplete-java-minus) | `2.0.0`       |
+| [JavaServer Pages](https://atom.io/packages/language-java)                       | `.text.html.jsp`                     | [autocomplete-jsp](https://atom.io/packages/autocomplete-jsp)       | `2.0.0`    | 
+| [Java](https://atom.io/packages/language-java)                                   | `.source.java`                       | [autocomplete-java-minus](https://atom.io/packages/autocomplete-java-minus) | `2.0.0` |
 | [JUnit Test Report](https://atom.io/packages/language-java)                      | `.text.junit-test-report`            |                                                                     |            |
 | [Makefile](https://atom.io/packages/language-make)                               | `.source.makefile`                   |                                                                     |            |
 | [LESS](https://atom.io/packages/language-less)                                   | `.source.css.less`                   |                                                                     |            |
 | [SQL (Mustache)](https://atom.io/packages/language-mustache)                     | `.source.sql.mustache`               |                                                                     |            |
 | [HTML (Mustache)](https://atom.io/packages/language-mustache)                    | `.text.html.mustache`                |                                                                     |            |
-| [Objective-C++](https://atom.io/packages/language-objective-c)                   | `.source.objcpp`                     | [autocomplete-clang](https://atom.io/packages/autocomplete-clang)                                                                    |            |
+| [Objective-C++](https://atom.io/packages/language-objective-c)                   | `.source.objcpp`                     | [autocomplete-clang](https://atom.io/packages/autocomplete-clang)   |            |
 | [Strings File](https://atom.io/packages/language-objective-c)                    | `.source.strings`                    |                                                                     |            |
-| [Objective-C](https://atom.io/packages/language-objective-c)                     | `.source.objc`                       | [autocomplete-clang](https://atom.io/packages/autocomplete-clang)                                                                    |            |
+| [Objective-C](https://atom.io/packages/language-objective-c)                     | `.source.objc`                       | [autocomplete-clang](https://atom.io/packages/autocomplete-clang)   |            |
 | [Property List (XML)](https://atom.io/packages/language-property-list)           | `.text.xml.plist`                    |                                                                     |            |
 | [Property List (Old-Style)](https://atom.io/packages/language-property-list)     | `.source.plist`                      |                                                                     |            |
 | [Perl](https://atom.io/packages/language-perl)                                   | `.source.perl`                       |                                                                     |            |
 | [PHP](https://atom.io/packages/language-php)                                     | `.text.html.php`                     |                                                                     |            |
-| PHP                                                                              | `.source.php`                        | [php-integrator-autocomplete-plus](https://github.com/php-integrator/atom-autocompletion), [atom-autocomplete-php](https://github.com/Peekmo/atom-autocomplete-php), [autocomplete-php](https://atom.io/packages/autocomplete-php)                     | `2.0.0`    |
+| PHP                                                                              | `.source.php`                        | [php-integrator-autocomplete-plus](https://github.com/php-integrator/atom-autocompletion), [atom-autocomplete-php](https://github.com/Peekmo/atom-autocomplete-php), [autocomplete-php](https://atom.io/packages/autocomplete-php) | `2.0.0`    |
 | [Python Console](https://atom.io/packages/language-python)                       | `.text.python.console`               |                                                                     |            |
 | [Python Traceback](https://atom.io/packages/language-python)                     | `.text.python.traceback`             |                                                                     |            |
 | [Regular Expressions (Python)](https://atom.io/packages/language-python)         | `.source.regexp.python`              |                                                                     |            |
-| [Python](https://atom.io/packages/language-python)                               | `.source.python`                     | [autocomplete-python](https://atom.io/packages/autocomplete-python)                                                                    |            |
+| [Python](https://atom.io/packages/language-python)                               | `.source.python`                     | [autocomplete-python](https://atom.io/packages/autocomplete-python) |            |
 | [Ruby on Rails (RJS)](https://atom.io/packages/language-ruby-on-rails)           | `.source.ruby.rails.rjs`             |                                                                     |            |
 | [Ruby](https://atom.io/packages/language-ruby)                                   | `.source.ruby`                       |                                                                     |            |
 | [HTML (Ruby - ERB)](https://atom.io/packages/language-ruby)                      | `.text.html.erb`                     |                                                                     |            |
@@ -64,7 +64,7 @@
 | [SQL](https://atom.io/packages/language-sql)                                     | `.source.sql`                        |                                                                     |            |
 | [TOML](https://atom.io/packages/language-toml)                                   | `.source.toml`                       |                                                                     |            |
 | [XSL](https://atom.io/packages/language-xml)                                     | `.text.xml.xsl`                      |                                                                     |            |
-| [XML](https://atom.io/packages/language-xml)                                     | `.text.xml`                          | [autocomplete-xml](https://github.com/pleonex/atom-autocomplete-xml)           | `2.0.0`    |
+| [XML](https://atom.io/packages/language-xml)                                     | `.text.xml`                          | [autocomplete-xml](https://github.com/pleonex/atom-autocomplete-xml) | `2.0.0`   |
 | [YAML](https://atom.io/packages/language-yaml)                                   | `.source.yaml`                       |                                                                     |            |
 
 ## Providers For Third-Party Grammars
@@ -72,9 +72,9 @@
 | Grammar                                                    | Selector           | Provider                                                                | API Status            |
 |:-----------------------------------------------------------|:-------------------|:------------------------------------------------------------------------|:----------------------|
 | [Apex](https://atom.io/packages/mavensmate-atom)           | `.source.apex`     | [mavensmate-atom](https://atom.io/packages/mavensmate-atom)             | `1.0.0`               |
-| [AsciiDoc](https://atom.io/packages/language-asciidoc)     | `.source.asciidoc` | [autocomplete-asciidoc](https://atom.io/packages/autocomplete-asciidoc)           | `2.0.0` |
+| [AsciiDoc](https://atom.io/packages/language-asciidoc)     | `.source.asciidoc` | [autocomplete-asciidoc](https://atom.io/packages/autocomplete-asciidoc) | `2.0.0`               |
 | [C#](https://atom.io/packages/language-csharp)             | `.source.cs`       | [omnisharp-atom](https://atom.io/packages/omnisharp-atom)               | `2.0.0`               |
-| [ComputerCraft](https://atom.io/packages/language-computercraft)      | `.source.computercraft`                     | [autocomplete-computercraft](https://atom.io/packages/autocomplete-computercraft)   |  `1.0.0`          |
+| [ComputerCraft](https://atom.io/packages/language-computercraft) | `.source.computercraft` | [autocomplete-computercraft](https://atom.io/packages/autocomplete-computercraft) |  `1.0.0` |
 | [Dart](https://github.com/radicaled/dart-tools)            | `.source.dart`     | [dart-tools](https://github.com/radicaled/dart-tools)                   |
 | [Dart](https://github.com/dart-atom/dartlang)              | `.source.dart`     | [dartlang](https://github.com/dart-atom/dartlang)                       |
 | [Elixir](https://atom.io/packages/language-elixir)         | `.source.elixir`   | [autocomplete-elixir](https://atom.io/packages/autocomplete-elixir)     | `2.0.0`               |
@@ -84,12 +84,12 @@
 | [Haskell](https://atom.io/packages/language-haskell)       | `.source.haskell`  | [autocomplete-haskell](https://atom.io/packages/autocomplete-haskell)   | `1.0.0`               |
 | [Haskell](https://atom.io/packages/language-haskell)       | `.source.haskell`  | [ide-haskell](https://atom.io/packages/ide-haskell)                     | `1.0.0`               |
 | [Haxe](https://atom.io/packages/language-haxe)             | `.source.haxe`     | [autocomplete-haxe](https://atom.io/packages/autocomplete-haxe)         | `1.1.0`               |
-| [Marko](https://github.com/marko-js/atom-language-marko)| `.text.marko` | [autocomplete-marko](https://github.com/marko-js/atom-autocomplete-marko) | `2.0.0` |
-| [Nunjucks](https://github.com/alohaas/language-nunjucks)| `.source.nunjucks, .text.html.nunjucks` | [autocomplete-nunjucks](https://github.com/puranjayjain/autocomplete-nunjucks) | `2.0.0` |
-| [Pig](https://atom.io/packages/pig)    | `.source.pig`     | [pig](https://atom.io/packages/pig)             | `2.0.0`               |
-| [Q/K](https://atom.io/packages/language-kdb-q)             | `.source.q`        | [autocomplete-kdb-q](https://atom.io/packages/autocomplete-kdb-q)   | `2.0.0`               |
+| [Marko](https://github.com/marko-js/atom-language-marko)   | `.text.marko`      | [autocomplete-marko](https://github.com/marko-js/atom-autocomplete-marko) | `2.0.0`             |
+| [Nunjucks](https://github.com/alohaas/language-nunjucks)   | `.source.nunjucks, .text.html.nunjucks` | [autocomplete-nunjucks](https://github.com/puranjayjain/autocomplete-nunjucks) | `2.0.0` |
+| [Pig](https://atom.io/packages/pig)                        | `.source.pig`      | [pig](https://atom.io/packages/pig)                                     | `2.0.0`               |
+| [Q/K](https://atom.io/packages/language-kdb-q)             | `.source.q`        | [autocomplete-kdb-q](https://atom.io/packages/autocomplete-kdb-q)       | `2.0.0`               |
 | [Rust](https://atom.io/packages/language-rust)             | `.source.rust`     | [racer](https://atom.io/packages/racer)                                 | `2.0.0`               |
-| [TypeScript](https://atom.io/packages/atom-typescript)     | `.source.ts`       | [atom-typescript](https://atom.io/packages/atom-typescript)             | `8.11.0`               |
+| [TypeScript](https://atom.io/packages/atom-typescript)     | `.source.ts`       | [atom-typescript](https://atom.io/packages/atom-typescript)             | `8.11.0`              |
 | [Visualforce](https://atom.io/packages/mavensmate-atom)    | `.visualforce`     | [mavensmate-atom](https://atom.io/packages/mavensmate-atom)             | `1.1.0`               |
 
 ## Providers Not Tied To A Specific Grammar
@@ -101,10 +101,10 @@
 | `*`                                                                                     | [autocomplete-paths](https://atom.io/packages/autocomplete-paths)         | `1.0.0` |
 | `*`                                                                                     | [atom-ctags](https://atom.io/packages/atom-ctags)                         | `2.0.0` |
 | `.source.js, .source.jsx`                                                               | [ide-flow](https://atom.io/packages/ide-flow)                             | `1.1.0` |
-| `.source.js, .source.jsx, .source.coffee`                                                               | [autocomplete-underdash](https://atom.io/packages/autocomplete-underdash)                             | `2.0.0` |
+| `.source.js, .source.jsx, .source.coffee`                                               | [autocomplete-underdash](https://atom.io/packages/autocomplete-underdash) | `2.0.0` |
 | `.source.css`, `.source.css.less`, `.source.sass`, `.source.css.scss`, `.source.stylus` | [project-palette-finder](https://atom.io/packages/project-palette-finder) | `1.1.0` |
 | `*`                                                                                     | [you-complete-me](https://atom.io/packages/you-complete-me)               | `2.0.0` |
-| `English word autocompetion with the hint of explanation.`                                                                                     | [autocomplete-en-en](https://atom.io/packages/autocomplete-en-en)               | `2.0.0` |
+| `English word autocompetion with the hint of explanation.`                              | [autocomplete-en-en](https://atom.io/packages/autocomplete-en-en)         | `2.0.0` |
 
 --
 
