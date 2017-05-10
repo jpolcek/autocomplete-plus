@@ -10,7 +10,7 @@ provider =
   selector: '.source.js, .source.coffee'
   disableForSelector: '.source.js .comment'
 
-  # This will take priority over the default provider, which has a inclusionPriority of 0.
+  # This will take priority over the default provider, which has an inclusionPriority of 0.
   # `excludeLowerPriority` will suppress any providers with a lower priority
   # i.e. The default provider will be suppressed
   inclusionPriority: 1
