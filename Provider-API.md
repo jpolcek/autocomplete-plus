@@ -141,6 +141,7 @@ provide: ->
 For multiple providers, just return an array:
 
 ```coffeescript
+module.exports =
 provide: ->
   [@yourProviderHere, @yourOtherProviderHere]
 ```
