@@ -133,6 +133,7 @@ Then, in your `main.coffee` (or whatever file you define as your `main` in `pack
 For a single provider:
 
 ```coffeescript
+module.exports =
 provide: ->
   @yourProviderHere
 ```
