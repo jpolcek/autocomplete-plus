@@ -134,16 +134,14 @@ For a single provider:
 
 ```coffeescript
 module.exports =
-provide: ->
-  @yourProviderHere
+  provide: -> @yourProviderHere
 ```
 
 For multiple providers, just return an array:
 
 ```coffeescript
 module.exports =
-provide: ->
-  [@yourProviderHere, @yourOtherProviderHere]
+  provide: -> [@yourProviderHere, @yourOtherProviderHere]
 ```
 
 ## Provider Examples
