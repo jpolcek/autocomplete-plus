@@ -19,6 +19,9 @@ provider =
   # This will be suggested before the default provider, which has a suggestionPriority of 1.
   suggestionPriority: 2
 
+  # Let autocomplete+ filter and sort the suggestions you provide.
+  filterSuggestions: true
+
   # Required: Return a promise, an array of suggestions, or null.
   getSuggestions: ({editor, bufferPosition, scopeDescriptor, prefix, activatedManually}) ->
     new Promise (resolve) ->
@@ -41,6 +44,7 @@ The properties of a provider:
 * `inclusionPriority` (optional): A number to indicate its priority to be included in a suggestions request. The default provider has an inclusion priority of `0`. Higher priority providers can suppress lower priority providers with `excludeLowerPriority`.
 * `excludeLowerPriority` (optional): Will not use lower priority providers when this provider is used.
 * `suggestionPriority` (optional): A number to determine the sort order of suggestions. The default provider has an suggestion priority of `1`
+* `filterSuggestions` (optional): If set to `true`, `autocomplete+` will perform fuzzy filtering and sorting on the list of matches returned by `getSuggestions`.
 * `dispose` (optional): Will be called if your provider is being destroyed by `autocomplete+`
 * `onDidInsertSuggestion` (optional): Function that is called when a suggestion from your provider was inserted into the buffer
   * `editor`: the [TextEditor](https://atom.io/docs/api/latest/TextEditor) your suggestion was inserted in
