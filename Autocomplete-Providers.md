@@ -92,6 +92,7 @@
 | [Rust](https://atom.io/packages/language-rust)             | `.source.rust`     | [racer](https://atom.io/packages/racer)                                 | `2.0.0`               |
 | [TypeScript](https://atom.io/packages/atom-typescript)     | `.source.ts`       | [atom-typescript](https://atom.io/packages/atom-typescript)             | `8.11.0`              |
 | [Visualforce](https://atom.io/packages/mavensmate-atom)    | `.visualforce`     | [mavensmate-atom](https://atom.io/packages/mavensmate-atom)             | `1.1.0`               |
+| [WordPress Coding Standard Whitelist Flags](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/wiki/Whitelisting-code-which-flags-errors) | `.php .comment` | [autocomplete-wpcs-flags](https://atom.io/packages/autocomplete-wpcs-flags) | `2.0.0` |
 
 ## Providers Not Tied To A Specific Grammar
 
