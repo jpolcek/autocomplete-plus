@@ -61,7 +61,7 @@
 | [Sass](https://atom.io/packages/language-sass)                                   | `.source.sass`                       |                                                                     |            |
 | [Plain Text](https://atom.io/packages/language-text)                             | `.text.plain`                        |                                                                     |            |
 | [SCSS](https://atom.io/packages/language-sass)                                   | `.source.css.scss`                   |                                                                     |            |
-| [SQL](https://atom.io/packages/language-sql)                                     | `.source.sql`                        |                                                                     |            |
+| [SQL](https://atom.io/packages/language-sql)                                     | `.source.sql`                        | [autocomplete-sql](https://atom.io/packages/autocomplete-sql)       | `2.0.0`    |
 | [TOML](https://atom.io/packages/language-toml)                                   | `.source.toml`                       |                                                                     |            |
 | [XSL](https://atom.io/packages/language-xml)                                     | `.text.xml.xsl`                      |                                                                     |            |
 | [XML](https://atom.io/packages/language-xml)                                     | `.text.xml`                          | [autocomplete-xml](https://github.com/pleonex/atom-autocomplete-xml) | `2.0.0`   |
