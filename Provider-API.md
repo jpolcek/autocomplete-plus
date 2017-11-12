@@ -96,6 +96,7 @@ provider =
         iconHTML: '' # (optional)
         description: '' # (optional)
         descriptionMoreURL: '' # (optional)
+        characterMatchIndices: [0, 1, 2] # (optional)
       resolve([suggestion])
 ```
 
@@ -115,6 +116,7 @@ Your suggestions should be returned from `getSuggestions` as an array of objects
 * `description` (optional): A doc-string summary or short description of the suggestion. When specified, it will be displayed at the bottom of the suggestions list.
 * `descriptionMoreURL` (optional): A url to the documentation or more information about this suggestion. When specified, a `More..` link will be displayed in the description area.
   ![autocomplete-description](https://cloud.githubusercontent.com/assets/69169/7171000/0eeb767e-e388-11e4-854f-547fd955a72e.jpg)
+* `characterMatchIndices` (optional): A list of indexes where the characters in the prefix appear in this suggestion's text. e.g. "foo" in "foo_bar" would be `[0, 1, 2]`.
 
 ## Registering Your Provider With `autocomplete+`
 
