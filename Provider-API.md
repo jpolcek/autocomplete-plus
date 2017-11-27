@@ -27,7 +27,7 @@ provider =
     new Promise (resolve) ->
       resolve([text: 'something'])
 
-  # (optional): *experimental* called when user the user selects a suggestion for the purpose of loading additional information about the suggestion.
+  # (optional): (_experimental_) called when user the user selects a suggestion for the purpose of loading additional information about the suggestion.
   getSuggestionDetailsOnSelect: (suggestion) ->
     new Promise (resolve) ->
       resolve(newSuggestion)
