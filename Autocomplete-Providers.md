@@ -102,7 +102,7 @@
 | `*`                                                                                     | [autocomplete-emojis](https://atom.io/packages/autocomplete-emojis)       | `1.0.0` |
 | `*`                                                                                     | [autocomplete-snippets](https://atom.io/packages/autocomplete-snippets)   | `2.0.0` |
 | `*`                                                                                     | [autocomplete-paths](https://atom.io/packages/autocomplete-paths)         | `1.0.0` |
-| `*`                                                                                     | [atom-path-intellisense](https://atom.io/packages/atom-path-intellisense)         | `1.0.2` |
+| `*`                                                                                     | [atom-path-intellisense](https://atom.io/packages/atom-path-intellisense)         | `1.0.3` |
 | `*`                                                                                     | [atom-ctags](https://atom.io/packages/atom-ctags)                         | `2.0.0` |
 | `.source.js, .source.jsx`                                                               | [ide-flow](https://atom.io/packages/ide-flow)                             | `1.1.0` |
 | `.source.js, .source.jsx, .source.coffee`                                               | [autocomplete-underdash](https://atom.io/packages/autocomplete-underdash) | `2.0.0` |
