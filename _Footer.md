@@ -1,1 +1,0 @@
-[auto faxck](https://forthebadge.com/images/badges/fuck-it-ship-it.svg)
